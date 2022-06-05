@@ -1,0 +1,32 @@
+section.stack {
+    border: 2px solid magenta;
+    padding-top: 100px;
+    background-color: salmon;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    &.tools li {
+        flex-basis: 50px;
+        padding: 20px;
+
+        i {
+            width: 100%;
+            font-size: 8rem;
+        }
+    }
+
+    &.learning li {
+        flex-basis: 50px;
+        padding: 20px;
+        i {
+            font-size: 5rem;
+        }
+    }
+
+}
