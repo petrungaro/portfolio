@@ -1,32 +1,34 @@
 section.stack {
-    border: 2px solid magenta;
+
     padding-top: 100px;
-    background-color: salmon;
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-
-    &.tools li {
-        flex-basis: 50px;
-        padding: 20px;
-
-        i {
-            width: 100%;
-            font-size: 8rem;
+    background-color: #003300;
+    height: 100vh;
+    
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        color: #a97b63;
+    
+        &.tools li {
+            flex-basis: 50px;
+            padding: 20px;
+    
+            i {
+                width: 100%;
+                font-size: 8rem;
+            }
         }
-    }
-
-    &.learning li {
-        flex-basis: 50px;
-        padding: 20px;
-        i {
-            font-size: 5rem;
+    
+        &.learning li {
+            flex-basis: 50px;
+            padding: 20px;
+            i {
+                font-size: 5rem;
+            }
         }
+    
     }
-
 }

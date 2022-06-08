@@ -2,6 +2,7 @@ nav {
     position: absolute;
     right: 0;
     top: 0;
+    backdrop-filter: blur(20px);
 
     // button - set default styles in base 
     button {
@@ -23,7 +24,7 @@ nav {
 
 header {
     height: 100%;
-    background: papayawhip;
+    background: #d1ae9b;
     display: flex;
     // flex-direction: column;
     justify-content: center;
@@ -40,25 +41,27 @@ header {
         flex-basis: 45%;
         flex-shrink: 0;
     }
+
+    h1, h2 {
+        margin: 0;
+        padding: 10px;
+        font-family:  $primary-font;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 70px;
+        // padding: 0.4em 1em;
+        color: #000;
+        position: relative;
+        display: inline-block;
+    
+        // position: absolute;
+        // top: 40%;
+        // left: 46%;
+        // transform: translate(-50%, -50%)
+    }
+
 }
 
-h1, h2 {
-    margin: 0;
-    padding: 10px;
-    font-family:  $primary-font;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 70px;
-    // padding: 0.4em 1em;
-    color: #000;
-    position: relative;
-    display: inline-block;
-
-    // position: absolute;
-    // top: 40%;
-    // left: 46%;
-    // transform: translate(-50%, -50%)
-}
 
 .block-reveal-first {
     // position: absolute;
@@ -120,67 +123,28 @@ p.header-blurb {
 
     animation: fade-in 1.2s linear forwards;
     animation-delay: 3.3s;
-}
 
 
+    span {
+        &.emphasize {
+            font-family: serif;
+            font-style: italic;
+            font-weight: 700;
+        }
 
-// ANIMATIONS
+        &.dot-underline {
+            border-bottom: 2px dotted white;
+        }
+        
+        &.text-expand {
+            // font-family: serif;
+            display: inline-block;
+            animation: text-expand 1.5s ease-in-out infinite alternate;
+            animation-delay: 4s;
 
-@keyframes rev-block {
-    0% {
-        left: 0;
-        width: 0%;
-    }
-    50% {
-        left: 0;
-        width: 100%;
-    }
-    100% {
-        left: 100%;
-        width: 0;
-    }
-}
-
-@keyframes appear-text {
-
-    0% {
-        opacity: 0;
-        color: white;
     }
 
-    100% {
-        opacity: 1;
-        color: black;
-    }
-}
 
-@keyframes line-up {
 
-    0% {
-        height: 0%;
-    }
-
-    100% {
-        height: 75%;
-    }
-
-}
-
-@keyframes line-pulse {
-    0% {
-        height: 75%
-    }
-
-    100% {
-        height: 80%;
-    }
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
     }
 }

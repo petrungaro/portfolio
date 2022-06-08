@@ -14,11 +14,17 @@ body {
     font-family: 'Montserrat', 'Helvetica', sans-serif;
 }
 
+h2 {
+    font-size: 3rem;
+}
+
 h3 {
     font-size: 3rem;
 }
 
-
+p {
+    font-size: 1.8rem;
+}
 
 .wrapper {
     width: 80%;
@@ -26,6 +32,13 @@ h3 {
     margin: 0 auto;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 ul {
     margin: 0;
+    padding: 0;
 }

@@ -1,0 +1,54 @@
+section.bio {
+    min-height: 80vh;
+    height: 100%;
+    background-color: #faf0e6;
+
+    // making the section position:relative and the child div (flex-container wrapper) absolute, so that 100%height will work on the div. Maybe will cause issues later?? Making note so I remember what I did
+    position: relative;
+
+    .bio-flex-container {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        padding: 150px 0;
+
+        // position: absolute;
+        height: 100%;
+        width: 100%;
+        gap: 30px;
+
+        // SIZING OF CHILD CONTAINERS
+        .bio-text,
+        .dynamic-image-box {
+            width: 50%;
+            img {
+                width: 100%;
+            }
+        }
+
+        .bio-text {
+            font-size: 1.8rem;
+            line-height: 3.4rem;
+        }
+
+    }
+    &::before {
+                content: 'HELLO';
+                font-size: 35rem;
+                color: #f7eadc;
+                display: block;
+                position: absolute;
+                
+            }
+
+
+}
+
+.vertical-line2 {
+    height: 100%;
+    border-left: 3px solid black;
+}
+
