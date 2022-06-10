@@ -399,7 +399,7 @@ nav {
   top: 0;
   width: 100%;
   height: 50px;
-  background: white;
+  background: #d1ae9b;
   border-bottom: 2px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -599,6 +599,9 @@ section.bio .bio-flex-container .bio-text {
   font-size: 1.8rem;
   line-height: 3.4rem;
 }
+section.bio .bio-flex-container .bio-text p {
+  margin: 1.8rem 0;
+}
 section.bio::before {
   content: "HELLO";
   font-family: Helvetica;
@@ -754,6 +757,16 @@ section.projects ul.projects-container li .overlay .site-links {
 section.contact {
   background: #faf0e6;
   padding: 100px 0;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 section.contact .contact-flex-container {
   display: -webkit-box;
@@ -829,6 +842,15 @@ section.contact form input, section.contact form textarea {
   margin-bottom: 10px;
   width: 100%;
 }
+section.contact form input {
+  border-bottom: 2px solid #333333;
+  background-color: #f8f5f2;
+  padding: 10px 0;
+}
+section.contact form textarea {
+  height: 30vh;
+  background-color: #f8f5f2;
+}
 section.contact form button {
   border: none;
   background: #333333;
@@ -843,6 +865,15 @@ section.contact form button {
 section.contact form button:hover, section.contact form button:focus {
   background: #faf0e6;
   color: #333333;
+}
+
+footer {
+  background: #333333;
+  text-align: center;
+}
+footer p {
+  color: white;
+  font-size: 1.6rem;
 }
 
 @-webkit-keyframes text-expand {
