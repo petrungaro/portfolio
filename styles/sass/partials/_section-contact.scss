@@ -5,11 +5,41 @@ section.contact {
     .contact-flex-container {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: stretch;
         gap: 10px;
 
         & > * {
             flex: 50%;
+        }
+
+        .contact-content {
+            padding-right: 30px;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+
+            .social-links {
+                list-style-type: none;
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+
+                border-top: 2px solid $black;
+                padding: 20px 0 0 0;
+
+
+                a:hover >i {
+                    color: rgb(211, 118, 109);
+                    transform: scale(1.1);
+                }
+
+                i {
+                    font-size: 5rem;
+                    transition: all .1s ease-in-out;
+                }
+            }
         }
     }
 
@@ -31,6 +61,24 @@ section.contact {
             margin-bottom: 10px;
 
             width: 100%;
+        }
+
+        button {
+            border: none;
+            background: $black;
+            // ! make text color whatever background colour that I use for the section
+            color: #faf0e6;
+            width: 100%;
+            font-size: 2rem;
+            padding: 20px;
+            border: 3px solid $black;
+            transition: all .1s;
+
+            &:hover, &:focus {
+                background: #faf0e6;
+                color: $black;
+            }
+
         }
     }
 

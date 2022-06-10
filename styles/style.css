@@ -258,7 +258,7 @@ body {
   font-family: "Montserrat", "Helvetica", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, p {
   margin: 0;
   padding: 0;
   color: #333333;
@@ -317,6 +317,39 @@ a {
 ul {
   margin: 0;
   padding: 0;
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+  color: #333333;
+}
+.underline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #333333;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+.underline:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.dotted {
+  border-bottom: 2px dotted #333333;
 }
 
 input[type=checkbox]:checked + label i.fa-chevron-right {
@@ -589,6 +622,9 @@ section.stack h2 {
   color: inherit;
   border-bottom: 2px solid #a97b63;
 }
+section.stack p {
+  color: #a97b63;
+}
 section.stack ul {
   list-style-type: none;
   display: -webkit-box;
@@ -695,12 +731,13 @@ section.projects ul.projects-container li .overlay h3 {
 }
 section.projects ul.projects-container li .overlay p {
   padding: 0 15px;
+  line-height: 2.5rem;
 }
 section.projects ul.projects-container li .overlay a {
   margin: 10px 0 5px 0;
 }
-section.projects ul.projects-container li .overlay a i {
-  font-size: 1.8rem;
+section.projects ul.projects-container li .overlay .tools-used i {
+  font-size: 2.5rem;
 }
 section.projects ul.projects-container li .overlay .site-links {
   display: -webkit-box;
@@ -725,15 +762,53 @@ section.contact .contact-flex-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   gap: 10px;
 }
 section.contact .contact-flex-container > * {
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
+}
+section.contact .contact-flex-container .contact-content {
+  padding-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.contact .contact-flex-container .contact-content .social-links {
+  list-style-type: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-top: 2px solid #333333;
+  padding: 20px 0 0 0;
+}
+section.contact .contact-flex-container .contact-content .social-links a:hover > i {
+  color: rgb(211, 118, 109);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+section.contact .contact-flex-container .contact-content .social-links i {
+  font-size: 5rem;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 section.contact form {
   display: -webkit-box;
@@ -753,6 +828,21 @@ section.contact form input, section.contact form textarea {
   border: none;
   margin-bottom: 10px;
   width: 100%;
+}
+section.contact form button {
+  border: none;
+  background: #333333;
+  color: #faf0e6;
+  width: 100%;
+  font-size: 2rem;
+  padding: 20px;
+  border: 3px solid #333333;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+section.contact form button:hover, section.contact form button:focus {
+  background: #faf0e6;
+  color: #333333;
 }
 
 @-webkit-keyframes text-expand {
