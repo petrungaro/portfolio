@@ -11,12 +11,30 @@
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <input type="checkbox" id="menu-toggle" class="hide-check">
+    <label for="menu-toggle" class="nav-toggle">
+        <i class="fa-solid fa-chevron-left"></i>
+        <i class="fa-solid fa-chevron-right"></i>
+    </label>
+    
     <nav>
-        <button>
-            <i class="fa-solid fa-chevron-left"></i>
-            <i class="fa-solid fa-chevron-right"></i>
+        
 
-        </button>
+        <ul class="nav-links">
+            <li><a href="#bio">About</a></li>
+            <li><a href="#tools">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- <li>
+                <a href="">HOVER ME</a>
+                <ul class="sub-menu">
+                    <li>sub1</li>
+                    <li>sub2</li>
+                    <li>sub3</li>
+                </ul>
+            </li> -->
+        </ul>
     </nav>
     <header>
         <div class="left">
@@ -37,7 +55,7 @@
 
     <main>
         <!-- REDO THIS SECTION - Is the wrapper necessary if everything is flexing to the center? Why doesn't the vertical line show up? -->
-        <section class="bio">
+        <section class="bio" id="bio">
             <div class="wrapper">
                 <div class="bio-flex-container">
                     <div class="bio-text">
@@ -49,12 +67,13 @@
                     <div class="vertical-line2"></div>
                     <div class="dynamic-image-box">
                         <img src="./assets/bw-portrait.jpg" alt="">
+                        <p>put linkedin, github, and a contact anchor link here?</p>
                     </div>
                 </div>
                 
             </div>
         </section>
-        <section class="stack">
+        <section class="stack" id="tools">
             <div class="wrapper">
                 <h2>Tools & Skills</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, iste adipisci quis alias veniam dolorem molestias dicta nam fugiat dolorum voluptas deleniti non, incidunt quo distinctio omnis minus nostrum sunt.</p>
@@ -86,15 +105,94 @@
                 </ul>
             </div>
         </section>
-        <section class="projects">
-            <!-- <img src="./assets/mockup.jpg" alt=""> -->
-            <h2>Recent Projects</h2>
-            div.
+        <section class="projects" id="projects">
+            <!-- DEAL WITH CSS TO ALIGN LI's EVENLY -->
+            <div class="wrapper">
+                <h2>Recent Projects</h2>
+                <ul class="projects-container">
+                    <li>
+                        <img src="./assets/placeholder-mockup1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Project Title</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi facilis rerum quam beatae, dicta modi provident commodi odit odio assumenda. Assumenda fugit dolores ea, aliquid iure possimus nisi, magni ducimus vel, sequi ipsam voluptates fugiat vero sint suscipit. Eum ullam natus non illum, fugiat consequatur! Delectus cupiditate magnam odio consequuntur!</p>
+                            <div class="tools-used">
+                                <p>Icons / list of tools used (html, css, js, etc.)</p>
+                            </div>
+                            <div class="site-links">
+                                <a href="" target="_blank">View Live Site</a>
+                                <a href="" target="_blank">View on Github</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./assets/mockup-trivia-phone.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Project Title</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi facilis rerum quam beatae, dicta modi provident commodi odit odio assumenda. Assumenda fugit dolores ea, aliquid iure possimus nisi, magni ducimus vel, sequi ipsam voluptates fugiat vero sint suscipit. Eum ullam natus non illum, fugiat consequatur! Delectus cupiditate magnam odio consequuntur!</p>
+                            <div class="tools-used">
+                                <p>Icons / list of tools used (html, css, js, etc.)</p>
+                            </div>
+                            <div class="site-links">
+                                <a href="" target="_blank">View Live Site</a>
+                                <a href="" target="_blank">View on Github</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./assets/placeholder-mockup2.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Project Title</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi facilis rerum quam beatae, dicta modi provident commodi odit odio assumenda. Assumenda fugit dolores ea, aliquid iure possimus nisi, magni ducimus vel, sequi ipsam voluptates fugiat vero sint suscipit. Eum ullam natus non illum, fugiat consequatur! Delectus cupiditate magnam odio consequuntur!</p>
+                            <div class="tools-used">
+                                <p>Icons / list of tools used (html, css, js, etc.)</p>
+                            </div>
+                            <div class="site-links">
+                                <a href="" target="_blank">View Live Site</a>
+                                <a href="" target="_blank">View on Github</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./assets/placeholder-mockup3.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Project Title</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi facilis rerum quam beatae, dicta modi provident commodi odit odio assumenda. Assumenda fugit dolores ea, aliquid iure possimus nisi, magni ducimus vel, sequi ipsam voluptates fugiat vero sint suscipit. Eum ullam natus non illum, fugiat consequatur! Delectus cupiditate magnam odio consequuntur!</p>
+                            <div class="tools-used">
+                                <p>Icons / list of tools used (html, css, js, etc.)</p>
+                            </div>
+                            <div class="site-links">
+                                <a href="" target="_blank">View Live Site</a>
+                                <a href="" target="_blank">View on Github</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>   
         </section>
-        <section class="contact"></section>
+        <section class="contact" id="contact">
+            <div class="wrapper">
+                <h2>Contact</h2>
+                <div class="contact-flex-container">
+                    <div class="contact-content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio in aspernatur quidem dolor? Inventore perferendis veniam quas, nihil incidunt dolor at autem cumque laboriosam perspiciatis neque obcaecati impedit accusamus molestiae, ullam qui labore fugiat error. Illo commodi doloribus omnis quas ipsa dolorem autem impedit delectus ad esse culpa nam pariatur quidem, ratione corporis numquam blanditiis dolore molestiae repellendus a eveniet suscipit voluptate! Sed dolor architecto, cupiditate, voluptate dolores iste ut molestias, non incidunt ea vitae.</p>
+                    </div>
+                    <form action="">
+                        <label for="name"></label>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" placeholder="Email address" required>
+                        <label for="message"></label>
+                        <textarea name="message" id="message" cols="30" rows="10">Say hello!
+                        </textarea>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <p>2022 Rob Petrungaro</p>
+    </footer>
     <script src="https://kit.fontawesome.com/597cd7df3e.js" crossorigin="anonymous"></script>
 </body>
 </html>

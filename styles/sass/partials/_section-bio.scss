@@ -2,7 +2,7 @@ section.bio {
     min-height: 80vh;
     height: 100%;
     background-color: #faf0e6;
-
+    overflow-x: hidden;
     // making the section position:relative and the child div (flex-container wrapper) absolute, so that 100%height will work on the div. Maybe will cause issues later?? Making note so I remember what I did
     position: relative;
 
@@ -37,18 +37,15 @@ section.bio {
     }
     &::before {
                 content: 'HELLO';
+                font-family: Helvetica;
+                font-weight: 900;
                 font-size: 35rem;
                 color: #f7eadc;
                 display: block;
                 position: absolute;
-                
+                animation: marquee 20s linear infinite;
+                left: 100%;
             }
-
-
 }
 
-.vertical-line2 {
-    height: 100%;
-    border-left: 3px solid black;
-}
 

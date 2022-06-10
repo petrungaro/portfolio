@@ -1,0 +1,37 @@
+section.contact {
+    background: #faf0e6;
+    padding: 100px 0;
+
+    .contact-flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        & > * {
+            flex: 50%;
+        }
+    }
+
+
+
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        font-size: 1.8rem;
+
+        input, textarea {
+
+            font-family: Helvetica;
+            border: none;
+            margin-bottom: 10px;
+
+            width: 100%;
+        }
+    }
+
+}

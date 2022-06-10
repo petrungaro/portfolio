@@ -1,11 +1,9 @@
 @keyframes text-expand {
     0% {
         letter-spacing: 0px;
-        // transform: scale(1);
     }
     100% {
         letter-spacing: 1px;
-        // transform: scale(1.02);
     }
 }
 
@@ -28,12 +26,10 @@
 
     0% {
         opacity: 0;
-        color: white;
     }
 
     100% {
         opacity: 1;
-        color: black;
     }
 }
 
@@ -65,5 +61,14 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0%)
+    }
+    100% {
+        transform: translate(-200%)
     }
 }

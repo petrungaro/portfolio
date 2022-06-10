@@ -3,6 +3,12 @@ section.stack {
     padding-top: 100px;
     background-color: #003300;
     height: 100vh;
+    color: #a97b63;
+
+    h2 {
+        color: inherit;
+        border-bottom: 2px solid #a97b63;
+    }
     
     ul {
         list-style-type: none;

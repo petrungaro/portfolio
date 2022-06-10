@@ -1,25 +1,25 @@
-nav {
-    position: absolute;
-    right: 0;
-    top: 0;
-    backdrop-filter: blur(20px);
+// nav {
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+//     backdrop-filter: blur(20px);
 
-    // button - set default styles in base 
-    button {
-        background: none;
-        border: none;
-        padding: 10px 20px;
+//     // button - set default styles in base 
+//     button {
+//         background: none;
+//         border: none;
+//         padding: 10px 20px;
 
-        i {
-            font-size: 30px;
-            transition: transform .2s;
-        }
+//         i {
+//             font-size: 30px;
+//             transition: transform .2s;
+//         }
 
-        &:hover  > .fa-chevron-right {
-            transform: translateX(-38px);
-        }
-    }
-}
+//         &:hover  > .fa-chevron-right {
+//             transform: translateX(-38px);
+//         }
+//     }
+// }
 
 
 header {
@@ -29,6 +29,8 @@ header {
     // flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    color: $black;
 
     .left {
         text-align: right;
@@ -45,12 +47,12 @@ header {
     h1, h2 {
         margin: 0;
         padding: 10px;
-        font-family:  $primary-font;
-        font-weight: bold;
+        font-family:  Helvetica, sans-serif;
+        // font-weight: bold;
         text-transform: uppercase;
         font-size: 70px;
         // padding: 0.4em 1em;
-        color: #000;
+        color: $black;
         position: relative;
         display: inline-block;
     
@@ -64,8 +66,6 @@ header {
 
 
 .block-reveal-first {
-    // position: absolute;
-
     span {
         opacity: 0;
         animation: appear-text 0.0001s linear forwards;
@@ -79,7 +79,7 @@ header {
         position: absolute;
         width: 0%;
         height: 100%;
-        background: black;
+        background: $black;
         animation: rev-block 1.5s cubic-bezier(0.19,1,0.22,1) forwards;
         animation-delay: 1s;
     }
@@ -101,7 +101,7 @@ header {
         position: absolute;
         width: 0%;
         height: 100%;
-        background: black;
+        background: $black;
         animation: rev-block 1.5s cubic-bezier(0.19,1,0.22,1) forwards;
         animation-delay: 1.5s;
     }
@@ -110,7 +110,7 @@ header {
 
 .vertical-line {
     height: 0%;
-    border-left: 3px solid black;
+    border-left: 3px solid $black;
     animation: line-up 1s ease-in-out forwards, line-pulse 1s ease-in-out infinite alternate;
     animation-delay: 1.5s, 3s;
 }
@@ -118,6 +118,7 @@ header {
 
 p.header-blurb {
     font-size: 5rem;
+    line-height: calc(5rem + 1.5vw);
     margin-left: 30px;
     opacity: 0;
 
