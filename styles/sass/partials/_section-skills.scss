@@ -1,0 +1,44 @@
+section.stack {
+
+    padding-top: 100px;
+    background-color: #003300;
+    height: 100vh;
+    color: #a97b63;
+
+    h2 {
+        color: inherit;
+        border-bottom: 2px solid #a97b63;
+    }
+
+    p {
+        color: #a97b63;
+    }
+    
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        color: #a97b63;
+    
+        &.tools li {
+            flex-basis: 50px;
+            padding: 20px;
+    
+            i {
+                width: 100%;
+                font-size: 8rem;
+            }
+        }
+    
+        &.learning li {
+            flex-basis: 50px;
+            padding: 20px;
+            i {
+                font-size: 5rem;
+            }
+        }
+    
+    }
+}

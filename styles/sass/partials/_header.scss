@@ -1,0 +1,128 @@
+
+header {
+    height: 100%;
+    background: #d1ae9b;
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: $black;
+
+    .left {
+        text-align: right;
+        margin-right: 30px;
+        flex-basis: 45%;
+        flex-shrink: 2;
+    }
+    .right {
+        text-align: left;
+        flex-basis: 45%;
+        flex-shrink: 0;
+    }
+
+    h1, h2 {
+        margin: 0;
+        padding: 10px;
+        font-family:  Helvetica, sans-serif;
+        // font-weight: bold;
+        text-transform: uppercase;
+        font-size: 70px;
+        // padding: 0.4em 1em;
+        color: $black;
+        position: relative;
+        display: inline-block;
+    
+        // position: absolute;
+        // top: 40%;
+        // left: 46%;
+        // transform: translate(-50%, -50%)
+    }
+
+}
+
+
+.block-reveal-first {
+    span {
+        opacity: 0;
+        animation: appear-text 0.0001s linear forwards;
+        animation-delay: 1.4s;
+    }
+
+    &:after {
+        content: '';
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background: $black;
+        animation: rev-block 1.5s cubic-bezier(0.19,1,0.22,1) forwards;
+        animation-delay: 1s;
+    }
+}
+
+.block-reveal-second {
+    font-size: 40px;
+    margin: 10px 0 0 40px;
+    span {
+        opacity: 0;
+        animation: appear-text 0.0001s linear forwards;
+        animation-delay: 2s;
+    }
+
+    &:after {
+        content: '';
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background: $black;
+        animation: rev-block 1.5s cubic-bezier(0.19,1,0.22,1) forwards;
+        animation-delay: 1.5s;
+    }
+}
+
+
+.vertical-line {
+    height: 0%;
+    border-left: 3px solid $black;
+    animation: line-up 1s ease-in-out forwards, line-pulse 1s ease-in-out infinite alternate;
+    animation-delay: 1.5s, 3s;
+}
+
+
+p.header-blurb {
+    font-size: 5rem;
+    line-height: calc(5rem + 1.5vw);
+    margin-left: 30px;
+    opacity: 0;
+
+    animation: fade-in 1.2s linear forwards;
+    animation-delay: 3.3s;
+
+
+    span {
+        &.emphasize {
+            font-family: serif;
+            font-style: italic;
+            font-weight: 700;
+        }
+
+        &.dot-underline {
+            border-bottom: 2px dotted white;
+        }
+        
+        &.text-expand {
+            // font-family: serif;
+            display: inline-block;
+            animation: text-expand 1.5s ease-in-out infinite alternate;
+            animation-delay: 4s;
+
+    }
+
+
+
+    }
+}

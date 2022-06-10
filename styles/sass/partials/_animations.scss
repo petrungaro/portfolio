@@ -1,0 +1,74 @@
+@keyframes text-expand {
+    0% {
+        letter-spacing: 0px;
+    }
+    100% {
+        letter-spacing: 1px;
+    }
+}
+
+@keyframes rev-block {
+    0% {
+        left: 0;
+        width: 0%;
+    }
+    50% {
+        left: 0;
+        width: 100%;
+    }
+    100% {
+        left: 100%;
+        width: 0;
+    }
+}
+
+@keyframes appear-text {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes line-up {
+
+    0% {
+        height: 0%;
+    }
+
+    100% {
+        height: 75%;
+    }
+
+}
+
+@keyframes line-pulse {
+    0% {
+        height: 75%
+    }
+
+    100% {
+        height: 80%;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0%)
+    }
+    100% {
+        transform: translate(-200%)
+    }
+}
