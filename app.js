@@ -64,13 +64,61 @@ bio.content = {
     },
     woodworking: {
         src: './assets/bench-chairs.jpg',
+        alt: 'A photo of some wood benches and lounge chairs',
+        caption: 'Some woodworking projects I made'
+    },
+    game: {
+        src: './assets/elden-ring.jpg',
+        alt: 'Cover photo of the Elden Ring video game showing a character hunched over a sword in the ground, with fiery rings in the sky',
+        caption: 'oooOoOoOooohhhhHHHh Elden Ring!'
     }
 }
 
+bio.setVariables = () => {
+    bio.spanElements = [...document.querySelectorAll('.bio-hover')];
+    bio.img = document.querySelector('.dynamic-image-box img');
+    bio.caption = document.querySelector('.dynamic-image-box figcaption');
+
+    // add event listener to each of the span elements
+    bio.attachListener(bio.spanElements);
+}
+
+
+bio.attachListener = (array) => {
+    array.forEach((element) => {
+        element.addEventListener('mouseover', function(e) {
+            bio.handleHover(e);
+        })
+    })
+}
+
+bio.handleHover = (event) => {
+    let currentElement = event.target.id;
+
+    bio.swapPhoto(bio.content[currentElement]);
+}
+
+bio.swapPhoto = (object) => {
+
+    bio.img.src = object.src;
+    bio.img.alt = object.alt;
+    
+    // bio.caption.innerText = object.caption;
+
+}
+
+// query the dom for all the span.bio-hover in the bio section
+// query the dom for the .dynamic-image-box img element
+// query the dom for the .dynamic-image-box figcaption element
+
+// Add an event listener to each span in the bio section
+    // on hover, replace the image src, alt, and figcaption using the properties found in the bio.content objects, using the id from the span element to match
+// 
 
 
 
 // INITS
 floaters.init();
-
+// ! TESTING
+bio.setVariables();
 console.log("%c Oh, hello there 👋", "color:green; font-size:24px;")

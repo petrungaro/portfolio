@@ -642,8 +642,19 @@ section.bio .bio-flex-container .dynamic-image-box {
           align-items: center;
   background: rgba(216, 214, 214, 0.3);
 }
+section.bio .bio-flex-container .dynamic-image-box .fade-out {
+  -webkit-animation: fade-out 1s linear 0.5s 1 forwards;
+          animation: fade-out 1s linear 0.5s 1 forwards;
+}
+section.bio .bio-flex-container .dynamic-image-box .fade-in {
+  -webkit-animation: fade-in 0.5s linear 0.01s 1 forwards;
+          animation: fade-in 0.5s linear 0.01s 1 forwards;
+}
 section.bio .bio-flex-container .dynamic-image-box img {
   padding: 80px 80px 15px 80px;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 section.bio .bio-flex-container .dynamic-image-box figcaption {
   font-size: 1.6rem;
@@ -1371,5 +1382,29 @@ footer p {
   to {
     -webkit-transform: rotate(360deg) translate(-50px) rotate(-360deg);
             transform: rotate(360deg) translate(-50px) rotate(-360deg);
+  }
+}
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

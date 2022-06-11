@@ -50,8 +50,19 @@ section.bio {
 
             background: rgba(216, 214, 214, 0.3);
 
+            .fade-out {
+                animation: fade-out 1s linear .5s 1 forwards;
+            }
+
+            .fade-in {
+                animation: fade-in .5s linear .01s 1 forwards;
+            }
+
+
             img {
                 padding: 80px 80px 15px 80px;
+                opacity: 1;
+                transition: opacity .3s;
             }
 
             figcaption {
