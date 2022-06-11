@@ -29,3 +29,5 @@ const moveIcon = function(xAmount,yAmount) {
         icon.style.top = (icon.offsetTop) - (yAmount / movementStrength) + "px";
     });
 }
+
+console.log("%c Oh, hello there 👋", "color:green; font-size:24px;")

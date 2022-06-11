@@ -602,6 +602,12 @@ section.bio .bio-flex-container .bio-text {
 section.bio .bio-flex-container .bio-text p {
   margin: 1.8rem 0;
 }
+section.bio .bio-flex-container .dynamic-image-box {
+  background: rgba(216, 214, 214, 0.3);
+}
+section.bio .bio-flex-container .dynamic-image-box img {
+  padding: 80px;
+}
 section.bio::before {
   content: "HELLO";
   font-family: Helvetica;
