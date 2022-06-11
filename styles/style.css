@@ -244,6 +244,10 @@ html {
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  -ms-scroll-snap-type: proximity;
+      scroll-snap-type: proximity;
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
 }
 
 html, body {
@@ -300,6 +304,10 @@ a {
   width: 80%;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+section {
+  scroll-snap-align: start;
 }
 
 .flex-container {
@@ -582,7 +590,7 @@ section.bio .bio-flex-container {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding: 150px 0;
+  padding: 50px 0 150px 0;
   height: 100%;
   width: 100%;
   gap: 30px;

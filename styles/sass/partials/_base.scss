@@ -1,6 +1,8 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    scroll-snap-type: proximity;
+    scroll-snap-type: y proximity;
 }
 
 html, body {
@@ -54,6 +56,10 @@ a {
     width: 80%;
     max-width: 1400px;
     margin: 0 auto;
+}
+
+section {
+    scroll-snap-align: start;
 }
 
 .flex-container {
