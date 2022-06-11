@@ -37,6 +37,14 @@ section.bio {
             }
         }
 
+        .dynamic-image-box {
+            background: rgba(216, 214, 214, 0.3);
+
+            img {
+                padding: 80px;
+            }
+        }
+
     }
     &::before {
                 content: 'HELLO';
