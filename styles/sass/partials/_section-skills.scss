@@ -1,9 +1,88 @@
 section.stack {
-
-    padding-top: 100px;
-    background-color: #003300;
+    
+    // TESTING ANIMATION
+    width: 100vw;
     height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+
+    .wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    background-color: #003300;
     color: #a97b63;
+
+    // .flex {
+    //     display: flex;
+    //     justify-content: stretch;
+    //     align-items: center;
+    //     height:100%;
+    // }
+    
+
+    .text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        width: 60%;
+        height: 100%;
+
+        h2 {
+            width: 100%;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 3rem;
+
+        }
+    }
+    
+    i {
+        font-size: 80px;
+        position: absolute;
+        // display: inline-block;
+        z-index: 1;
+        border: 1px solid;
+        padding: 20px;
+        border-radius: 50%;
+        mix-blend-mode: exclusion;
+    }
+
+    .icon3, .icon5, .icon7 {
+        padding: 40px;
+    }
+
+    .icon9 {
+        font-size: 50px;
+    }
+
+    .icon1 {top: 10%; left: 3%; animation: circle1 20s linear infinite;}
+    .icon2 {top: 35%; left: 10%; animation: circle2 35s linear infinite;}
+    .icon3 {top: 5%; left: 40%; animation: circle3 25s linear infinite;}
+    .icon4 {top: 10%; left: 80%; animation: circle4 20s linear infinite;}
+    .icon5 {top: 70%; left: 5%; animation: circle5 50s linear infinite;}
+    .icon6 {top: 40%; left: 90%; animation: circle6 30s linear infinite;}
+    .icon7 {top: 70%; left: 70%; animation: circle7 70s linear infinite;}
+    .icon8 {top: 75%; left: 45%; animation: circle8 30s linear infinite;}
+    .icon9 {top: 20%; left: 60%; animation: circle9 30s linear infinite;}
+    .icon10 {top: 70%; left: 85%; animation: circle1 20s linear infinite;}
+    .icon11 {top: 80%; left: 30%; animation: circle4 25s linear infinite;}
+    
+    
+    // ORIGINAL
+    // padding-top: 100px;
+    // background-color: #003300;
+    // height: 100vh;
+    // color: #a97b63;
 
     h2 {
         color: inherit;

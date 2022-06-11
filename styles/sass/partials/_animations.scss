@@ -72,3 +72,112 @@
         transform: translate(-200%)
     }
 }
+
+
+@keyframes circle1 {
+    from {
+        transform: rotate(0deg) 
+                    translate(-30px) 
+                    rotate(0deg); 
+    } to {
+        transform: rotate(360deg)
+                    translate(-30px)
+                    rotate(-360deg);
+    }
+}
+
+@keyframes circle2 {
+    from {
+        transform: rotate(360deg) 
+                    translate(-30px) 
+                    rotate(-360deg); 
+    } to {
+        transform: rotate(0deg)
+                    translate(-30px)
+                    rotate(0deg);
+    }
+}
+
+@keyframes circle3 {
+    from {
+        transform: rotate(360deg) 
+                    translate(-60px) 
+                    rotate(-360deg); 
+    } to {
+        transform: rotate(0deg)
+                    translate(-60px)
+                    rotate(0deg);
+    }
+}
+
+@keyframes circle4 {
+    from {
+        transform: rotate(360deg) 
+                    translate(-40px) 
+                    rotate(-360deg); 
+    } to {
+        transform: rotate(0deg)
+                    translate(-40px)
+                    rotate(0deg);
+    }
+}
+
+@keyframes circle5 {
+    from {
+        transform: rotate(0deg) 
+                    translate(-50px) 
+                    rotate(0deg); 
+    } to {
+        transform: rotate(360deg)
+                    translate(-50px)
+                    rotate(-360deg);
+    }
+}
+
+@keyframes circle6 {
+    from {
+        transform: rotate(0deg) 
+                    translate(-40px) 
+                    rotate(0deg); 
+    } to {
+        transform: rotate(360deg)
+                    translate(-40px)
+                    rotate(-360deg);
+    }
+}
+
+@keyframes circle7 {
+    from {
+        transform: rotate(360deg) 
+                    translate(-40px) 
+                    rotate(-360deg); 
+    } to {
+        transform: rotate(0deg)
+                    translate(-40px)
+                    rotate(0deg);
+    }
+}
+
+@keyframes circle8 {
+    from {
+        transform: rotate(0deg) 
+                    translate(-30px) 
+                    rotate(0deg); 
+    } to {
+        transform: rotate(360deg)
+                    translate(-30px)
+                    rotate(-360deg);
+    }
+}
+
+@keyframes circle9 {
+    from {
+        transform: rotate(0deg) 
+                    translate(-50px) 
+                    rotate(0deg); 
+    } to {
+        transform: rotate(360deg)
+                    translate(-50px)
+                    rotate(-360deg);
+    }
+}
