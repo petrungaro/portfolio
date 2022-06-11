@@ -15,6 +15,7 @@
     <input type="checkbox" id="menu-toggle" class="hide-check">
     <label for="menu-toggle" class="nav-toggle">
         <i class="fa-solid fa-chevron-left"></i>
+        <!-- <span class="menu-label"></span> -->
         <i class="fa-solid fa-chevron-right"></i>
     </label>
     
@@ -25,14 +26,6 @@
             <li><a href="#tools">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <!-- <li>
-                <a href="">HOVER ME</a>
-                <ul class="sub-menu">
-                    <li>sub1</li>
-                    <li>sub2</li>
-                    <li>sub3</li>
-                </ul>
-            </li> -->
         </ul>
     </nav>
     <header>
@@ -54,20 +47,22 @@
 
     <main>
         <section class="bio" id="bio">
+            <div class="marquee">
+                <span>HELLO</span>
+            </div>
             <div class="wrapper">
                 <div class="bio-flex-container">
                     <div class="bio-text">
                         <h2>About</h2>
-                        <p>Hi I'm <span class="bold">Rob</span> , a front-end developer based in <span>Toronto</span> and recent Juno grad.</p>
-                        <p>I've got a constantly curious mind and an excitement for learning new technologies and building my skills. My work before coding left me with a strong appreciation for clean, modern, functional design. With web development, that has translated into writing code that provides the user with intuitive, informative content that is visually engaging.</p>
-                        <!-- <p>Keep on scrolling to check out some of my <span>recent projects</span>.</p> -->
-                        <p>When I'm not coding or learning, I enjoy doing a little <span>woodworking</span>, going for a swim, sinking into a <span>video game</span>, or biking around.</p>
+                        <p>Hi I'm <span class="bold" id="bio-rob">Rob</span>, a front-end developer based in <span id="bio-toronto">Toronto</span> and recent <span id="bio-juno">Juno</span> grad.</p>
+                        <p>I've got a curious mind and an excitement for learning new technologies and building my skills. My work before coding left me with a strong appreciation for clean, modern, functional design. With web development, that has translated into writing code that provides the user with intuitive, informative content that is visually engaging.</p>
+                        <p>When I'm not coding or learning, I enjoy <span id="bio-woodworking">woodworking</span>, going for a swim, sinking too many hours into a <span id="bio-game">video game</span>, or biking around.</p>
                     </div>
 
-                    <div class="dynamic-image-box">
-                        <img src="./assets/bw-portrait.jpg" alt="">
-                        <!-- <p>put linkedin, github, and a contact anchor link here?</p> -->
-                    </div>
+                    <figure class="dynamic-image-box">
+                        <img src="./assets/bench-chairs.jpg" alt="">
+                        <figcaption></figcaption>
+                    </figure>
                 </div>
                 
             </div>
@@ -88,15 +83,9 @@
                 <i class="devicon-git-plain icon icon6"></i>
                 <i class="devicon-github-original icon icon7"></i>
                 <i class="devicon-firebase-plain icon icon8"></i>
-
-                
                 <i class="devicon-vscode-plain icon icon9"></i>
                 <i class="devicon-npm-original-wordmark icon icon10"></i>
-                <i class="devicon-bash-plain icon icon11"></i>    
-                
-
-
-                
+                <i class="devicon-bash-plain icon icon11"></i>
             </div>
         </section>
         <section class="projects" id="projects">
@@ -109,16 +98,18 @@
                         <div class="overlay">
                             <h3>All About Sophie</h3>
                             <p>For this PSD conversion project, the goal was to take a designer-provided psd file and styleguide, and convert that to a fully responsive, accessible, multi-page website using HTML & CSS. Small Javascript functionality was later added.</p>
-                            <div class="tools-used">
-                                <p>
-                                    <i class="fa-brands fa-html5" title="HTML"></i>
-                                    <i class="fa-brands fa-css3-alt" title="CSS"></i>
-                                    <i class="fa-brands fa-js" title="Javascript"></i>
-                                </p>
-                            </div>
-                            <div class="site-links">
-                                <a href="https://comfy-semifreddo-a5c5b9.netlify.app/" target="_blank" class="underline">View Live Site</a>
-                                <a href="https://github.com/petrungaro/rob-petrungaro-project-one" target="_blank" class="underline">View on Github</a>
+                            <div class="card-footer">
+                                <div class="site-links">
+                                    <a href="https://comfy-semifreddo-a5c5b9.netlify.app/" target="_blank" class="underline">Live Site</a>
+                                    <a href="https://github.com/petrungaro/rob-petrungaro-project-one" target="_blank" class="underline">Github</a>
+                                </div>
+                                <div class="tools-used">
+                                    <p>
+                                        <i class="fa-brands fa-html5" title="HTML"></i>
+                                        <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                                        <i class="fa-brands fa-js" title="Javascript"></i>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -127,19 +118,21 @@
                         <div class="overlay">
                             <h3>Trivia Night</h3>
                             <p>The goal of this <a class="dotted" href="https://www.simonoconnor.ca/" target="_blank" title="Simon O'Connor">paired</a> project was to create a web app that included user interaction and the use of a RESTful API. We decided to create a trivia app where the user can select a category and difficulty, and is then served with a series of multiple choice questions.</p>
-                            <div class="tools-used">
-                                <p>
-                                    <i class="fa-brands fa-html5" title="HTML"></i>
-                                    <i class="fa-brands fa-css3-alt" title="CSS"></i>
-                                    <i class="fa-brands fa-sass" title="Sass"></i>
-                                    <i class="fa-brands fa-js" title="Javascript"></i>
-                                    <i class="fa-solid fa-gears" title="API Integration"></i>
-                                    <i class="fa-solid fa-user-group" title="Pair Programming"></i>
-                                </p>
-                            </div>
-                            <div class="site-links">
-                                <a href="https://boisterous-cheesecake-b1d2d5.netlify.app/" target="_blank" class="underline">View Live Site</a>
-                                <a href="https://github.com/Simon-and-Robs-Project-2/TriviaNight" target="_blank" class="underline">View on Github</a>
+                            <div class="card-footer">
+                                <div class="site-links">
+                                    <a href="https://boisterous-cheesecake-b1d2d5.netlify.app/" target="_blank" class="underline">Live Site</a>
+                                    <a href="https://github.com/Simon-and-Robs-Project-2/TriviaNight" target="_blank" class="underline">Github</a>
+                                </div>
+                                <div class="tools-used">
+                                    <p>
+                                        <i class="fa-brands fa-html5" title="HTML"></i>
+                                        <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                                        <i class="fa-brands fa-sass" title="Sass"></i>
+                                        <i class="fa-brands fa-js" title="Javascript"></i>
+                                        <i class="fa-solid fa-gears" title="API Integration"></i>
+                                        <i class="fa-solid fa-user-group" title="Pair Programming"></i>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -148,12 +141,19 @@
                         <div class="overlay">
                             <h3>Project Title</h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi facilis rerum quam beatae, dicta modi provident commodi odit odio assumenda. Assumenda fugit dolores ea, aliquid iure possimus nisi, magni ducimus vel, sequi ipsam voluptates fugiat vero sint suscipit. Eum ullam natus non illum, fugiat consequatur! Delectus cupiditate magnam odio consequuntur!</p>
-                            <div class="tools-used">
-                                <p>Icons / list of tools used (html, css, js, etc.)</p>
-                            </div>
-                            <div class="site-links">
-                                <a href="" target="_blank" class="underline">View Live Site</a>
-                                <a href="" target="_blank" class="underline">View on Github</a>
+                            <div class="card-footer">
+                                <div class="site-links">
+                                    <a href="" target="_blank" class="underline">Live Site</a>
+                                    <a href="" target="_blank" class="underline">Github</a>
+                                </div>
+                                <div class="tools-used">
+                                    <p>
+                                        <i class="fa-brands fa-html5" title="HTML"></i>
+                                        <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                                        <i class="fa-brands fa-js" title="Javascript"></i>
+                                        <i class="fa-solid fa-gears" title="API Integration"></i>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -162,12 +162,19 @@
                         <div class="overlay">
                             <h3>Project Title</h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi facilis rerum quam beatae, dicta modi provident commodi odit odio assumenda. Assumenda fugit dolores ea, aliquid iure possimus nisi, magni ducimus vel, sequi ipsam voluptates fugiat vero sint suscipit. Eum ullam natus non illum, fugiat consequatur! Delectus cupiditate magnam odio consequuntur!</p>
-                            <div class="tools-used">
-                                <p>Icons / list of tools used (html, css, js, etc.)</p>
-                            </div>
-                            <div class="site-links">
-                                <a href="" target="_blank" class="underline">View Live Site</a>
-                                <a href="" target="_blank" class="underline">View on Github</a>
+                            <div class="card-footer">
+                                <div class="site-links">
+                                    <a href="" target="_blank" class="underline">Live Site</a>
+                                    <a href="" target="_blank" class="underline">Github</a>
+                                </div>
+                                <div class="tools-used">
+                                    <p>
+                                        <i class="fa-brands fa-html5" title="HTML"></i>
+                                        <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                                        <i class="fa-brands fa-js" title="Javascript"></i>
+                                        <i class="fa-solid fa-gears" title="API Integration"></i>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -179,8 +186,8 @@
                 <h2>Contact</h2>
                 <div class="contact-flex-container">
                     <div class="contact-content">
-                        <p>Interested in working with me, or just wanna chat? Feel free to reach out!</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo porro dicta in, ducimus aliquid perferendis pariatur error quidem magnam consequuntur!</p>
+                        <p>Interested in working with me, or just wanna chat? Break the ice with one of these handy canned responses!</p>
+                        <img src="./assets/CANNED_RESPONSES-tan.svg" alt="">
                         <ul class="social-links">
                             <li>
                                 <a href="https://www.linkedin.com/in/rob-petrungaro/" target="_blank"><i class="fa-brands fa-linkedin" title="LinkedIn"></i></a>

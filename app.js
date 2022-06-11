@@ -40,6 +40,37 @@ floaters.moveIcon = (xAmount, yAmount) => {
 }
 
 
+// ***************************************************************************** //
+// ********************************PHOTO CHANGER******************************** //
+
+const bio = {};
+
+bio.content = {
+    rob: {
+        src: './assets/bw-portrait.jpg',
+        alt: 'A black and white photo of me, Rob',
+        caption: ''
+    },
+
+    juno: {
+        src: './assets/juno.png',
+        alt: 'An image showing the logo for Juno College',
+        caption: 'Juno College'
+    },
+    toronto: {
+        src: './assets/toronto-skyline-island.jpg',
+        alt: 'A photo of the Toronto skyline and its reflection on the water',
+        caption: 'Toronto skyline, photo taken from the island'
+    },
+    woodworking: {
+        src: './assets/bench-chairs.jpg',
+    }
+}
+
+
+
+
+// INITS
 floaters.init();
 
 console.log("%c Oh, hello there 👋", "color:green; font-size:24px;")

@@ -78,7 +78,18 @@ section.projects {
                     // }
                 }
 
+                .card-footer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-top: 2px solid black;
+                }
+
                 .tools-used {
+
+                    p {
+                        padding: 10px 0 0 0;
+                    }
 
                     i {
                         font-size: 2.5rem;
@@ -88,11 +99,10 @@ section.projects {
 
                 .site-links {
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: flex-start;
                     align-items: center;
-                    border-top: 2px solid black;
                     
-                    
+                    gap: 30px;
                 }
 
             }

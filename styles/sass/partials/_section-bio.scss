@@ -35,28 +35,70 @@ section.bio {
             p {
                 margin: 1.8rem 0;
             }
+
+            span {
+                font-weight: 600;
+                cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>👀</text></svg>"), auto;
+            }
         }
 
         .dynamic-image-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
             background: rgba(216, 214, 214, 0.3);
 
             img {
-                padding: 80px;
+                padding: 80px 80px 15px 80px;
+            }
+
+            figcaption {
+                font-size: 1.6rem;
+                padding-bottom: 50px;
             }
         }
 
     }
-    &::before {
-                content: 'HELLO';
-                font-family: Helvetica;
-                font-weight: 900;
-                font-size: 35rem;
-                color: #f7eadc;
-                display: block;
-                position: absolute;
-                animation: marquee 20s linear infinite;
-                left: 100%;
-            }
+
+    // !REMOVE
+    // &::before {
+    //             content: 'HELLO';
+    //             font-family: Helvetica;
+    //             font-weight: 900;
+    //             font-size: 35rem;
+    //             color: #f7eadc;
+    //             display: block;
+    //             position: absolute;
+    //             // animation: marquee 20s linear infinite;
+    //             left: 100%;
+    //         }
+
+    .marquee {
+        // margin: 2rem 0;
+        font-size: 20rem;
+        font-weight: 700;
+        position: absolute;
+        top: 0;
+
+        $vw: 80vw;
+
+        span {
+            display: inline-block;
+            white-space: nowrap;
+            color: #f7eadc;
+            width: $vw;
+            text-shadow: $vw 0 currentColor,
+            calc($vw * 2) 0 currentColor,
+            calc($vw * 3) 0 currentColor,
+            calc($vw * 4) 0 currentColor;
+
+            will-change: transform;
+            animation: marquee 15s linear infinite;
+
+        }
+    }
 }
 
 

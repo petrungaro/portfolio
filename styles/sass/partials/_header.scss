@@ -1,9 +1,9 @@
 
 header {
     height: 100%;
+    overflow-x: hidden;
     background: #d1ae9b;
     display: flex;
-    // flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -116,6 +116,7 @@ p.header-blurb {
         
         &.text-expand {
             // font-family: serif;
+            white-space: nowrap;
             display: inline-block;
             animation: text-expand 1.5s ease-in-out infinite alternate;
             animation-delay: 4s;
