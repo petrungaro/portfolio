@@ -26,7 +26,47 @@ section.contact {
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            position: relative;
 
+            ul.responses {
+                position: absolute;
+                bottom: 25%;
+                opacity: 0;
+                transition: opacity 1s;
+
+                &.show-responses {
+                    opacity: 1;
+                }
+                
+                display: flex;
+
+                
+                list-style-type: none;
+                font-size: 2rem;
+
+                button {
+                    padding: 10px;
+                }
+
+            }
+
+
+            .soupcan-container {
+
+                width: 75%;
+                transition: transform 1s;
+                cursor: $eyes;
+                
+                &.flip-it {
+                    transform: translateY(-90%) translateX(-50%) rotate(145deg);
+                }
+
+
+                img.soup-can {
+                    width: 100%;
+                    animation: wiggle 2.5s infinite;
+                }
+            }
 
             .social-links {
                 list-style-type: none;

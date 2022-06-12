@@ -1,0 +1,35 @@
+@media (prefers-reduced-motion) {
+    .block-reveal-first {
+        
+        span {
+            opacity: 1;
+            animation: none;
+        }
+
+        &:after {
+            display: none;
+        }
+    }
+
+    .block-reveal-second {
+        
+        span {
+            opacity: 1;
+            animation: none;
+        }
+
+        &:after {
+            display: none;
+        }
+    }
+
+    .vertical-line {
+        height: 75%;
+        animation: none;
+    }
+
+    .stack .icon {
+        animation: none;
+    }
+}
+

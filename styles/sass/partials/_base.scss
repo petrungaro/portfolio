@@ -58,7 +58,7 @@ a {
     margin: 0 auto;
 }
 
-section {
+section:not(#contact) {
     scroll-snap-align: start;
 }
 

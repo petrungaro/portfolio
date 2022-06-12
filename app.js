@@ -45,6 +45,10 @@ floaters.moveIcon = (xAmount, yAmount) => {
 
 const bio = {};
 
+bio.init = () => {
+    bio.setVariables();
+}
+
 bio.content = {
     rob: {
         src: './assets/bw-portrait.jpg',
@@ -100,25 +104,77 @@ bio.handleHover = (event) => {
 
 bio.swapPhoto = (object) => {
 
-    bio.img.src = object.src;
-    bio.img.alt = object.alt;
+    bio.img.classList.add('fade-out');
+    setTimeout(()=>{
+        bio.img.src = object.src;
+        bio.img.alt = object.alt;
+        bio.img.classList.remove('fade-out');
+        bio.img.classList.add('fade-in');
+    }, 500)
+    setTimeout(()=> {
+        bio.img.classList.remove('fade-in');
+    }, 1000)
     
     // bio.caption.innerText = object.caption;
 
 }
 
-// query the dom for all the span.bio-hover in the bio section
-// query the dom for the .dynamic-image-box img element
-// query the dom for the .dynamic-image-box figcaption element
 
-// Add an event listener to each span in the bio section
-    // on hover, replace the image src, alt, and figcaption using the properties found in the bio.content objects, using the id from the span element to match
-// 
+// *********************** SOUP CAN ************************** //
+
+const soupcan = {};
+
+soupcan.responses = {
+    res1: `You're hired!`,
+    res2: 'How did I get here?',
+    res3: '$$$ --> Rob',
+    res4: 'Wanna be friends?',
+    res5: `I've got a great joke for you...(insert great joke please)`,
+    res6: `Seriously how did I get here? Why can't I leave?`
+}
+
+soupcan.setVariables = () => {
+    soupcan.can = document.querySelector('.soupcan-container');
+    soupcan.textBox = document.querySelector('#message');
+    soupcan.responseUl = document.querySelector('ul.responses');
+    soupcan.responseButtons = [...document.querySelectorAll('.response-button')];
+
+    soupcan.addListeners();
+}
+
+
+soupcan.addListeners = () => {
+    // add listener to soup can container
+    soupcan.can.addEventListener('click', soupcan.handleCanClick)
+    // add listener to each response button, and then call the showText with the event, so you can target the id
+    soupcan.responseButtons.forEach((button) => {
+        button.addEventListener('click', function(e) {
+            console.log('clicked');
+            soupcan.showText(e);
+        })
+    })
+}
+
+soupcan.handleCanClick = () => {
+    // toggle flip class and show the response options
+    soupcan.can.classList.toggle('flip-it');
+    soupcan.responseUl.classList.toggle('show-responses');
+}
+
+soupcan.showText = (event) => {
+    let resId = event.target.id;
+
+    soupcan.textBox.innerText = '';
+    soupcan.textBox.innerText = soupcan.responses[resId];
+}
 
 
 
-// INITS
-floaters.init();
-// ! TESTING
-bio.setVariables();
-console.log("%c Oh, hello there 👋", "color:green; font-size:24px;")
+
+document.addEventListener("DOMContentLoaded", function() {
+    floaters.init();
+    bio.init();
+    soupcan.setVariables();
+    console.log("%c Oh, hello there 👋", "color:green; font-size:24px;")
+});
+

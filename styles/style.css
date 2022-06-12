@@ -307,7 +307,7 @@ a {
   margin: 0 auto;
 }
 
-section {
+section:not(#contact) {
   scroll-snap-align: start;
 }
 
@@ -502,7 +502,7 @@ header h1, header h2 {
 }
 
 .block-reveal-first span {
-  opacity: 0;
+  opacity: 1;
   -webkit-animation: appear-text 0.0001s linear forwards;
           animation: appear-text 0.0001s linear forwards;
   -webkit-animation-delay: 1.4s;
@@ -598,9 +598,9 @@ section.bio .bio-flex-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
   padding: 50px 0 150px 0;
   height: 100%;
@@ -616,15 +616,17 @@ section.bio .bio-flex-container .dynamic-image-box img {
   width: 100%;
 }
 section.bio .bio-flex-container .bio-text {
+  margin-top: 30px;
   font-size: 1.8rem;
   line-height: 3.4rem;
+  cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>👀</text></svg>"), auto;
 }
 section.bio .bio-flex-container .bio-text p {
   margin: 1.8rem 0;
 }
-section.bio .bio-flex-container .bio-text span {
-  font-weight: 600;
-  cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>👀</text></svg>"), auto;
+section.bio .bio-flex-container .bio-text span.bio-hover {
+  font-style: italic;
+  border-bottom: 2px dotted white;
 }
 section.bio .bio-flex-container .dynamic-image-box {
   display: -webkit-box;
@@ -643,18 +645,16 @@ section.bio .bio-flex-container .dynamic-image-box {
   background: rgba(216, 214, 214, 0.3);
 }
 section.bio .bio-flex-container .dynamic-image-box .fade-out {
-  -webkit-animation: fade-out 1s linear 0.5s 1 forwards;
-          animation: fade-out 1s linear 0.5s 1 forwards;
+  -webkit-animation: fade-out 0.5s forwards;
+          animation: fade-out 0.5s forwards;
 }
 section.bio .bio-flex-container .dynamic-image-box .fade-in {
-  -webkit-animation: fade-in 0.5s linear 0.01s 1 forwards;
-          animation: fade-in 0.5s linear 0.01s 1 forwards;
+  -webkit-animation: fade-in 0.5s forwards;
+          animation: fade-in 0.5s forwards;
 }
 section.bio .bio-flex-container .dynamic-image-box img {
   padding: 80px 80px 15px 80px;
   opacity: 1;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
 }
 section.bio .bio-flex-container .dynamic-image-box figcaption {
   font-size: 1.6rem;
@@ -721,6 +721,8 @@ section.stack .text-box h2 {
 }
 section.stack .text-box p {
   font-size: 3rem;
+  line-height: 5rem;
+  text-align: center;
 }
 section.stack i {
   font-size: 80px;
@@ -845,7 +847,7 @@ section.stack ul.learning li i {
 
 section.projects {
   background-color: #d1ae9b;
-  padding: 100px 0;
+  padding: 60px 0;
 }
 section.projects ul.projects-container {
   display: -webkit-box;
@@ -998,6 +1000,42 @@ section.contact .contact-flex-container .contact-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+section.contact .contact-flex-container .contact-content ul.responses {
+  position: absolute;
+  bottom: 25%;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  font-size: 2rem;
+}
+section.contact .contact-flex-container .contact-content ul.responses.show-responses {
+  opacity: 1;
+}
+section.contact .contact-flex-container .contact-content ul.responses button {
+  padding: 10px;
+}
+section.contact .contact-flex-container .contact-content .soupcan-container {
+  width: 75%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>👀</text></svg>"), auto;
+}
+section.contact .contact-flex-container .contact-content .soupcan-container.flip-it {
+  -webkit-transform: translateY(-90%) translateX(-50%) rotate(145deg);
+          transform: translateY(-90%) translateX(-50%) rotate(145deg);
+}
+section.contact .contact-flex-container .contact-content .soupcan-container img.soup-can {
+  width: 100%;
+  -webkit-animation: wiggle 2.5s infinite;
+          animation: wiggle 2.5s infinite;
 }
 section.contact .contact-flex-container .contact-content .social-links {
   list-style-type: none;
@@ -1406,5 +1444,79 @@ footer p {
   }
   to {
     opacity: 1;
+  }
+}
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  85% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  95% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  85% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  95% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@media (prefers-reduced-motion) {
+  .block-reveal-first span {
+    opacity: 1;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .block-reveal-first:after {
+    display: none;
+  }
+
+  .block-reveal-second span {
+    opacity: 1;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .block-reveal-second:after {
+    display: none;
+  }
+
+  .vertical-line {
+    height: 75%;
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .stack .icon {
+    -webkit-animation: none;
+            animation: none;
   }
 }
