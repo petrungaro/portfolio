@@ -106,13 +106,16 @@ nav {
         li {
 
             a {
-                padding: 0 10px;
+                padding: 5px 10px;
+                // display: inline-block;
+                // transition: transform .3s ease-in-out;
+
+                // &:hover, 
+                // &:focus {
+                //     transform: scale(1.1);
+                // }
             }
 
-            &:hover > ul {
-                display: block;
-            }
-            // ! Doesn't work yet, make relative position on li, submenu absolute?
         }
 
         ul.sub-menu {

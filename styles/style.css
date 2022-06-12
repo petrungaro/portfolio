@@ -448,10 +448,7 @@ nav ul.nav-links {
   list-style-type: none;
 }
 nav ul.nav-links li a {
-  padding: 0 10px;
-}
-nav ul.nav-links li:hover > ul {
-  display: block;
+  padding: 5px 10px;
 }
 nav ul.nav-links ul.sub-menu {
   display: none;
