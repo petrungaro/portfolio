@@ -62,17 +62,22 @@ bio.handleHover = (event) => {
 
 bio.swapPhoto = (object) => {
 
+    bio.img.classList.remove('fade-in');
     bio.img.classList.add('fade-out');
     setTimeout(()=>{
         bio.img.src = object.src;
         bio.img.alt = object.alt;
         bio.img.classList.add('fade-in');
-        bio.img.classList.remove('fade-out');
+        // bio.img.classList.remove('fade-out');
     }, 500)
-    setTimeout(()=> {
-        bio.img.classList.remove('fade-in');
-    }, 1000)
+    // setTimeout(()=> {
+    //     bio.img.classList.remove('fade-in');
+    // }, 1000)
     
+        setTimeout(()=> {
+        bio.img.classList.remove('fade-out');
+    }, 1000)
+
     // bio.caption.innerText = object.caption;
 
 }
