@@ -79,12 +79,6 @@ section.stack {
     .icon10 {top: 70%; left: 85%; animation: circle1 20s linear infinite;}
     .icon11 {top: 80%; left: 30%; animation: circle4 25s linear infinite;}
     
-    
-    // ORIGINAL
-    // padding-top: 100px;
-    // background-color: #003300;
-    // height: 100vh;
-    // color: #a97b63;
 
     h2 {
         color: inherit;
@@ -110,14 +104,6 @@ section.stack {
             i {
                 width: 100%;
                 font-size: 8rem;
-            }
-        }
-    
-        &.learning li {
-            flex-basis: 50px;
-            padding: 20px;
-            i {
-                font-size: 5rem;
             }
         }
     

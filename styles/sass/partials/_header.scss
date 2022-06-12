@@ -81,7 +81,7 @@ header {
 .vertical-line {
     height: 0%;
     border-left: 3px solid $black;
-    animation: line-up 1s ease-in-out forwards, line-pulse 1s ease-in-out infinite alternate;
+    animation: line-up 1s ease-in-out forwards, line-pulse 2s ease-in-out infinite alternate;
     animation-delay: 1.5s, 3s;
 }
 

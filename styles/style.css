@@ -550,8 +550,8 @@ header h1, header h2 {
 .vertical-line {
   height: 0%;
   border-left: 3px solid #333333;
-  -webkit-animation: line-up 1s ease-in-out forwards, line-pulse 1s ease-in-out infinite alternate;
-          animation: line-up 1s ease-in-out forwards, line-pulse 1s ease-in-out infinite alternate;
+  -webkit-animation: line-up 1s ease-in-out forwards, line-pulse 2s ease-in-out infinite alternate;
+          animation: line-up 1s ease-in-out forwards, line-pulse 2s ease-in-out infinite alternate;
   -webkit-animation-delay: 1.5s, 3s;
           animation-delay: 1.5s, 3s;
 }
@@ -837,14 +837,6 @@ section.stack ul.tools li i {
   width: 100%;
   font-size: 8rem;
 }
-section.stack ul.learning li {
-  -ms-flex-preferred-size: 50px;
-      flex-basis: 50px;
-  padding: 20px;
-}
-section.stack ul.learning li i {
-  font-size: 5rem;
-}
 
 section.projects {
   background-color: #d1ae9b;
@@ -1006,20 +998,55 @@ section.contact .contact-flex-container .contact-content {
 section.contact .contact-flex-container .contact-content ul.responses {
   position: absolute;
   bottom: 25%;
+  width: 100%;
+  height: 60%;
   opacity: 0;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style-type: none;
   font-size: 2rem;
 }
 section.contact .contact-flex-container .contact-content ul.responses.show-responses {
   opacity: 1;
 }
+section.contact .contact-flex-container .contact-content ul.responses li {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #333333;
+  background-color: #333333;
+  background: #f8f5f2;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: background-color 0.3s ease-in, -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in, -webkit-transform 0.3s ease-in-out;
+}
+section.contact .contact-flex-container .contact-content ul.responses li:hover, section.contact .contact-flex-container .contact-content ul.responses li:focus {
+  -webkit-transform: translateY(-20px) scale(1.3);
+          transform: translateY(-20px) scale(1.3);
+  background-color: #d1ae9b;
+}
+section.contact .contact-flex-container .contact-content ul.responses li:active {
+  -webkit-transform: translateY(-25px) scale(1.4);
+          transform: translateY(-25px) scale(1.4);
+}
 section.contact .contact-flex-container .contact-content ul.responses button {
-  padding: 10px;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 section.contact .contact-flex-container .contact-content .soupcan-container {
   width: 75%;
@@ -1028,6 +1055,7 @@ section.contact .contact-flex-container .contact-content .soupcan-container {
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
   cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>👀</text></svg>"), auto;
+  z-index: 10;
 }
 section.contact .contact-flex-container .contact-content .soupcan-container.flip-it {
   -webkit-transform: translateY(-90%) translateX(-50%) rotate(145deg);
@@ -1097,6 +1125,7 @@ section.contact form button {
   font-size: 2rem;
   padding: 20px;
   border: 3px solid #333333;
+  cursor: pointer;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }

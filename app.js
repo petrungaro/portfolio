@@ -1,3 +1,5 @@
+// ***************************************************************** //
+// ************************** FLOATERS ***************************** //
 const floaters = {};
 
 floaters.iconArray = document.querySelectorAll('.icon');
@@ -125,12 +127,12 @@ bio.swapPhoto = (object) => {
 const soupcan = {};
 
 soupcan.responses = {
-    res1: `You're hired!`,
-    res2: 'How did I get here?',
-    res3: '$$$ --> Rob',
-    res4: 'Wanna be friends?',
-    res5: `I've got a great joke for you...(insert great joke please)`,
-    res6: `Seriously how did I get here? Why can't I leave?`
+    res1: `You're hired! (This constitues a written contract and is binding) Hurray! 🥳`,
+    res2: `How did I get here? 🧐`,
+    res3: `☀️ How about that weather? ⛈`,
+    res4: 'Wanna be friends? 👯‍♂️',
+    res5: `I've got a great joke for you...👉<insert great joke please>👈`,
+    res6: `Seriously how did I get here? Why can't I leave?? 😱`
 }
 
 soupcan.setVariables = () => {
@@ -164,8 +166,8 @@ soupcan.handleCanClick = () => {
 soupcan.showText = (event) => {
     let resId = event.target.id;
 
-    soupcan.textBox.innerText = '';
-    soupcan.textBox.innerText = soupcan.responses[resId];
+    soupcan.textBox.innerHTML = '';
+    soupcan.textBox.innerHTML = soupcan.responses[resId];
 }
 
 

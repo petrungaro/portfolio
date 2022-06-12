@@ -31,6 +31,8 @@ section.contact {
             ul.responses {
                 position: absolute;
                 bottom: 25%;
+                width: 100%;
+                height: 60%;
                 opacity: 0;
                 transition: opacity 1s;
 
@@ -39,13 +41,45 @@ section.contact {
                 }
                 
                 display: flex;
+                justify-content: center;
+                align-items: center;
 
-                
                 list-style-type: none;
                 font-size: 2rem;
 
+                li {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    border: 2px solid $black;
+                    background-color: $black;
+                    background: #f8f5f2;
+                    transform: scale(1.2);
+                    transition: transform .3s ease-in-out, background-color .3s ease-in;
+
+                    &:hover,&:focus {
+                        transform: translateY(-20px) scale(1.3);
+                        background-color: #d1ae9b;
+                    }
+
+                    &:active {
+                        transform: translateY(-25px) scale(1.4);
+                    }
+
+                    // starting position
+                    // position: absolute;
+                    // top:10%;
+                    // left: 40%;
+                }
+
                 button {
-                    padding: 10px;
+                    width: 100%;
+                    height: 100%;
+                    background: none;
+                    border:none;
+                    cursor: pointer;
+
+
                 }
 
             }
@@ -56,6 +90,7 @@ section.contact {
                 width: 75%;
                 transition: transform 1s;
                 cursor: $eyes;
+                z-index: 10;
                 
                 &.flip-it {
                     transform: translateY(-90%) translateX(-50%) rotate(145deg);
@@ -135,6 +170,7 @@ section.contact {
             font-size: 2rem;
             padding: 20px;
             border: 3px solid $black;
+            cursor: pointer;
             transition: all .1s;
 
             &:hover, &:focus {
