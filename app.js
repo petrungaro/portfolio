@@ -69,7 +69,7 @@ bio.swapPhoto = (object) => {
         bio.img.alt = object.alt;
         bio.img.classList.add('fade-in');
         // bio.img.classList.remove('fade-out');
-    }, 500)
+    }, 1000)
     // setTimeout(()=> {
     //     bio.img.classList.remove('fade-in');
     // }, 1000)
