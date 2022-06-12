@@ -307,10 +307,6 @@ a {
   margin: 0 auto;
 }
 
-section:not(#contact) {
-  scroll-snap-align: start;
-}
-
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -662,7 +658,7 @@ section.bio .bio-flex-container .dynamic-image-box figcaption {
   padding-bottom: 50px;
 }
 section.bio .marquee {
-  font-size: 20rem;
+  font-size: 200px;
   font-weight: 700;
   position: absolute;
   top: 0;
@@ -946,6 +942,13 @@ section.projects ul.projects-container li .overlay .site-links {
           align-items: center;
   gap: 30px;
 }
+section.projects h2 .mobile-hint {
+  opacity: 0;
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-style: italic;
+  color: #faf0e6;
+}
 
 section.contact {
   background: #faf0e6;
@@ -1078,7 +1081,7 @@ section.contact .contact-flex-container .contact-content .social-links {
   border-top: 2px solid #333333;
   padding: 20px 0 0 0;
 }
-section.contact .contact-flex-container .contact-content .social-links a:hover > i {
+section.contact .contact-flex-container .contact-content .social-links a:hover > i, section.contact .contact-flex-container .contact-content .social-links a:focus > i {
   color: rgb(211, 118, 109);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -1100,6 +1103,7 @@ section.contact form {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.8rem;
+  color: #333333;
 }
 section.contact form input, section.contact form textarea {
   font-family: Helvetica;
@@ -1116,6 +1120,7 @@ section.contact form textarea {
   height: 30vh;
   background-color: #f8f5f2;
   resize: none;
+  color: #333333;
 }
 section.contact form button {
   border: none;
@@ -1548,5 +1553,195 @@ footer p {
   .stack .icon {
     -webkit-animation: none;
             animation: none;
+  }
+}
+@media (max-width: 1080px) {
+  header p.header-blurb {
+    font-size: calc(1.6rem + 1vw);
+    margin-right: 30px;
+  }
+  header .left h1 {
+    font-size: unset;
+  }
+  header .left .xl {
+    font-size: calc(2.5rem + 2vw);
+  }
+  header .left h2 {
+    font-size: unset;
+  }
+  header .left h2 span {
+    font-size: calc(2rem + 1vw);
+  }
+
+  section.bio .marquee {
+    font-size: 170px;
+  }
+  section.bio .bio-flex-container .bio-text {
+    -webkit-box-flex: 2;
+        -ms-flex: 2 0 60%;
+            flex: 2 0 60%;
+  }
+  section.bio .bio-flex-container .dynamic-image-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 2 50%;
+            flex: 0 2 50%;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  section.bio .bio-flex-container .dynamic-image-box img {
+    padding: 15px;
+  }
+
+  section.stack i {
+    font-size: 40px;
+  }
+  section.stack .text-box {
+    width: 50%;
+  }
+
+  section.projects ul.projects-container li .overlay p.description {
+    font-size: 2rem;
+    line-height: 4.5rem;
+  }
+}
+@media (max-width: 800px) {
+  section.bio .marquee {
+    font-size: 115px;
+  }
+  section.bio .bio-flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.bio .bio-flex-container .bio-text {
+    width: 100%;
+  }
+  section.bio .bio-flex-container .dynamic-image-box {
+    width: 60%;
+  }
+
+  section.projects h2 .mobile-hint {
+    opacity: 1;
+  }
+
+  section.contact .contact-flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  section.contact .contact-flex-container .contact-content {
+    border-top: 2px solid #333333;
+    padding-right: 0;
+  }
+  section.contact .contact-flex-container .contact-content p,
+section.contact .contact-flex-container .contact-content .soupcan-container,
+section.contact .contact-flex-container .contact-content .responses {
+    display: none;
+  }
+  section.contact .contact-flex-container .contact-content .social-links {
+    border: none;
+  }
+}
+@media (max-width: 550px) {
+  input[type=checkbox]:checked ~ nav {
+    -webkit-transform: unset;
+            transform: unset;
+    height: 100%;
+  }
+
+  nav {
+    height: 100%;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    background-color: #faf0e6;
+  }
+  nav ul.nav-links {
+    height: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .vertical-line {
+    display: none;
+  }
+  header .left {
+    -ms-flex-preferred-size: unset;
+        flex-basis: unset;
+  }
+  header .left .xl {
+    font-size: calc(3.5rem + 2vw);
+  }
+  header .right {
+    -ms-flex-preferred-size: unset;
+        flex-basis: unset;
+    height: 50%;
+  }
+  header .right p.header-blurb {
+    text-align: center;
+    font-size: 30px;
+    margin: 5px 30px 50px 30px;
+    padding-top: 30px;
+    border-top: 3px solid black;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+
+  section.bio .marquee {
+    display: none;
+  }
+
+  section.stack i {
+    -webkit-animation: none;
+            animation: none;
+    z-index: -1;
+  }
+  section.stack .text-box {
+    width: 80%;
+  }
+
+  section.projects ul.projects-container li .overlay h3 {
+    font-size: 1.8rem;
+  }
+  section.projects ul.projects-container li .overlay p.description {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+}
+@media (max-width: 420px) {
+  section.projects ul.projects-container li .overlay h3 {
+    font-size: 1.8rem;
+  }
+  section.projects ul.projects-container li .overlay p.description {
+    display: none;
+  }
+  section.projects ul.projects-container li .overlay .site-links {
+    gap: 10px;
+  }
+  section.projects ul.projects-container li .overlay .tools-used i {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 390px) {
+  section.projects ul.projects-container li .overlay .site-links {
+    gap: 15px;
+  }
+  section.projects ul.projects-container li .overlay .tools-used i {
+    display: none;
   }
 }

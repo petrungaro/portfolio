@@ -120,3 +120,44 @@ p.header-blurb {
 
     }
 }
+
+
+// ! Mobile marquee header - not working properly, deal with later
+// header {
+//     position: relative;
+
+//     .marquee-header {
+//         display: none;
+
+//         font-size: 150px;
+//         font-weight: 700;
+//         position: absolute;
+//         top: 0;
+
+//         $vw: 300vw;
+
+//         span {
+            
+//             &.stationary {
+//                 position: relative;
+//                 left: 100vw;
+//                 top: 15%;
+//             }
+//             // calc($vw * 2) 0 currentColor,
+//             // calc($vw * 3) 0 currentColor,
+//             // calc($vw * 4) 0 currentColor;
+
+//             &.moving {
+//                 display: inline-block;
+//                 white-space: nowrap;
+//                 color: #f7eadc;
+//                 text-shadow: $vw 0 currentColor;
+
+//                 width: $vw;
+//                 will-change: transform;
+//                 animation: marquee 10s linear infinite;
+//             }
+
+//         }
+//     }
+// }
