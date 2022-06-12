@@ -1049,6 +1049,7 @@ section.contact .contact-flex-container .contact-content ul.responses button {
   background: none;
   border: none;
   cursor: pointer;
+  color: #333333;
 }
 section.contact .contact-flex-container .contact-content .soupcan-container {
   width: 75%;
