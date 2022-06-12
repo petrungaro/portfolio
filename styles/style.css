@@ -502,7 +502,7 @@ header h1, header h2 {
 }
 
 .block-reveal-first span {
-  opacity: 1;
+  opacity: 0;
   -webkit-animation: appear-text 0.0001s linear forwards;
           animation: appear-text 0.0001s linear forwards;
   -webkit-animation-delay: 1.4s;
@@ -626,9 +626,10 @@ section.bio .bio-flex-container .bio-text p {
 }
 section.bio .bio-flex-container .bio-text span.bio-hover {
   font-style: italic;
-  border-bottom: 2px dotted white;
+  border-bottom: 2px dotted lightslategray;
 }
 section.bio .bio-flex-container .dynamic-image-box {
+  margin: 50px 0 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

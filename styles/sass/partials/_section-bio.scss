@@ -41,13 +41,14 @@ section.bio {
 
             span.bio-hover {
                 font-style:italic;
-                border-bottom: 2px dotted white;
+                border-bottom: 2px dotted lightslategray;
                 // font-weight: 600;
-                // !cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>👀</text></svg>"), auto;
+                // cursor: $eyes;
             }
         }
 
         .dynamic-image-box {
+            margin: 50px 0 0 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
