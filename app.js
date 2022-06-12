@@ -151,7 +151,6 @@ soupcan.addListeners = () => {
     // add listener to each response button, and then call the showText with the event, so you can target the id
     soupcan.responseButtons.forEach((button) => {
         button.addEventListener('click', function(e) {
-            console.log('clicked');
             soupcan.showText(e);
         })
     })
