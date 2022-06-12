@@ -13,7 +13,7 @@
     <a href="#main" class="skip-link">Skip to main content</a>
     
     <input type="checkbox" id="menu-toggle" class="hide-check">
-    <label for="menu-toggle" class="nav-toggle">
+    <label for="menu-toggle" class="nav-toggle" tabindex="0">
         <i class="fa-solid fa-chevron-left"></i>
         <!-- <span class="menu-label"></span> -->
         <i class="fa-solid fa-chevron-right"></i>
@@ -51,13 +51,13 @@
     </header>
 
     <main>
-        <section class="bio" id="bio">
+        <section class="bio" id="bio" tabindex="0">
             <div class="marquee">
                 <span>HELLO</span>
             </div>
             <div class="wrapper">
                 <div class="bio-flex-container">
-                    <div class="bio-text">
+                    <div class="bio-text" tabindex="0">
                         <h2>About</h2>
                         <p>Hi I'm <span class="bio-hover" id="rob">Rob</span>, a front-end developer based in <span class="bio-hover" id="toronto">Toronto</span> and recent <span class="bio-hover" id="juno">Juno</span> grad.</p>
                         <p>I've got a curious mind and an excitement for learning new technologies and building my skills. My work before coding left me with a strong appreciation for clean, modern, functional design. With web development, that has translated into writing code that provides the user with intuitive, informative content that is visually engaging.</p>
@@ -72,10 +72,10 @@
                 
             </div>
         </section>
-        <section class="stack" id="tools">
+        <section class="stack" id="tools" tabindex="0">
             <div class="wrapper flex">
                 <!-- <h2>Tools & Skills</h2> -->
-                <div class="text-box">
+                <div class="text-box" tabindex="0">
                     <h2>Skills & Tools</h2>
                     <p>HTML, CSS, JavaScript, React, Rest APIs, git, jQuery, github, Firebase, responsive design and learning more </p>
                 </div>
@@ -93,17 +93,16 @@
                 <i class="devicon-bash-plain icon icon11"></i>
             </div>
         </section>
-        <section class="projects" id="projects">
-            <!-- DEAL WITH CSS TO ALIGN LI's EVENLY -->
+        <section class="projects" id="projects" tabindex="0">
             <div class="wrapper">
                 <h2>Recent Projects</h2>
                 
                 <ul class="projects-container">
-                    <li>
+                    <li tabindex="0">
                         <img src="./assets/mockup-sophie.jpg" alt="Several screenshot mockups of a website">
                         <div class="overlay">
                             <h3>All About Sophie</h3>
-                            <p class="description">For this PSD conversion project, the goal was to take a designer-provided psd file and styleguide, and convert that to a fully responsive, accessible, multi-page website using HTML & CSS. Small Javascript functionality was later added.</p>
+                            <p class="description" tabindex="0">For this PSD conversion project, the goal was to take a designer-provided psd file and styleguide, and convert that to a fully responsive, accessible, multi-page website using HTML & CSS. Small Javascript functionality was later added.</p>
                             <div class="card-footer">
                                 <div class="site-links">
                                     <a href="https://comfy-semifreddo-a5c5b9.netlify.app/" target="_blank" class="underline">Live Site</a>
@@ -119,11 +118,11 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li tabindex="0">
                         <img src="./assets/mockup-trivia-phone.jpg" alt="A wooden mannequins hand holding a cellphone displaying a trivia game">
                         <div class="overlay">
                             <h3>Trivia Night</h3>
-                            <p class="description">The goal of this <a class="dotted" href="https://www.simonoconnor.ca/" target="_blank" title="Simon O'Connor">paired</a> project was to create a web app that included user interaction and the use of a RESTful API. We decided to create a trivia app where the user can select a category and difficulty, and is then served with a series of multiple choice questions.</p>
+                            <p class="description" tabindex="0">The goal of this <a class="dotted" href="https://www.simonoconnor.ca/" target="_blank" title="Simon O'Connor">paired</a> project was to create a web app that included user interaction and the use of a RESTful API. We decided to create a trivia app where the user can select a category and difficulty, and is then served with a series of multiple choice questions.</p>
                             <div class="card-footer">
                                 <div class="site-links">
                                     <a href="https://boisterous-cheesecake-b1d2d5.netlify.app/" target="_blank" class="underline">Live Site</a>
@@ -142,11 +141,11 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li tabindex="0">
                         <img src="./assets/placeholder-mockup2.jpg" alt="">
                         <div class="overlay">
                             <h3>Project Title</h3>
-                            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi facilis rerum quam beatae, dicta modi provident commodi odit odio assumenda. Assumenda fugit dolores ea, aliquid iure possimus nisi, magni ducimus vel, sequi ipsam voluptates fugiat vero sint suscipit. Eum ullam natus non illum, fugiat consequatur! Delectus cupiditate magnam odio consequuntur!</p>
+                            <p class="description" tabindex="0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi facilis rerum quam beatae, dicta modi provident commodi odit odio assumenda. Assumenda fugit dolores ea, aliquid iure possimus nisi, magni ducimus vel, sequi ipsam voluptates fugiat vero sint suscipit. Eum ullam natus non illum, fugiat consequatur! Delectus cupiditate magnam odio consequuntur!</p>
                             <div class="card-footer">
                                 <div class="site-links">
                                     <a href="" target="_blank" class="underline">Live Site</a>
@@ -163,11 +162,11 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li tabindex="0">
                         <img src="./assets/placeholder-mockup3.jpg" alt="">
                         <div class="overlay">
                             <h3>Project Title</h3>
-                            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi facilis rerum quam beatae, dicta modi provident commodi odit odio assumenda. Assumenda fugit dolores ea, aliquid iure possimus nisi, magni ducimus vel, sequi ipsam voluptates fugiat vero sint suscipit. Eum ullam natus non illum, fugiat consequatur! Delectus cupiditate magnam odio consequuntur!</p>
+                            <p class="description" tabindex="0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi facilis rerum quam beatae, dicta modi provident commodi odit odio assumenda. Assumenda fugit dolores ea, aliquid iure possimus nisi, magni ducimus vel, sequi ipsam voluptates fugiat vero sint suscipit. Eum ullam natus non illum, fugiat consequatur! Delectus cupiditate magnam odio consequuntur!</p>
                             <div class="card-footer">
                                 <div class="site-links">
                                     <a href="" target="_blank" class="underline">Live Site</a>
@@ -187,7 +186,7 @@
                 </ul>
             </div>   
         </section>
-        <section class="contact" id="contact">
+        <section class="contact" id="contact" tabindex="0">
             <div class="wrapper">
                 <h2>Contact</h2>
                 <div class="contact-flex-container">
@@ -204,7 +203,7 @@
                             <li><button class="response-button" id="res5">?</button></li>
                             <li><button class="response-button" id="res6">?</button></li>
                         </ul>
-                        <ul class="social-links">
+                        <ul class="social-links" tabindex="0">
                             <li>
                                 <a href="https://www.linkedin.com/in/rob-petrungaro/" target="_blank"><i class="fa-brands fa-linkedin" title="LinkedIn"></i></a>
                             </li>
@@ -219,8 +218,8 @@
                             </li>
                         </ul>
                     </div>
-                    <form action="https://formspree.io/f/xayvkbae" method="POST">
-                        <label for="name"></label>
+                    <form action="https://formspree.io/f/xayvkbae" method="POST" tabindex="0">
+                        <label for="name" ></label>
                         <input type="text" name="name" id="name" placeholder="Name">
                         <label for="email"></label>
                         <input type="email" name="email" id="email" placeholder="Email address" required>
