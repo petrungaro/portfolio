@@ -67,21 +67,15 @@ bio.swapPhoto = (object) => {
     setTimeout(()=>{
         bio.img.src = object.src;
         bio.img.alt = object.alt;
-        // bio.img.classList.add('fade-in');
-        // bio.img.classList.remove('fade-out');
     }, 500)
 
     setTimeout(()=> {
         bio.img.classList.add('fade-in');
     }, 750)
 
-
-    
     setTimeout(()=> {
         bio.img.classList.remove('fade-out');
     }, 1000)
-
-    // bio.caption.innerText = object.caption;
 
 }
 
@@ -191,6 +185,6 @@ document.addEventListener("DOMContentLoaded", function() {
     floaters.init();
     bio.init();
     soupcan.setVariables();
-    console.log("%c Oh, hello there 👋", "color:blue; font-size:20px;")
+    console.log("%c 👀", "font-size:30px;")
 });
 
