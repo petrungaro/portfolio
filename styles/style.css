@@ -364,7 +364,6 @@ ul {
 }
 
 label.nav-toggle {
-  display: fixed;
   background: none;
   border: none;
   padding: 10px 20px;
