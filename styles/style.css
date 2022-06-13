@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400&family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,500&family=Roboto:wght@400;700&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -561,9 +560,9 @@ p.header-blurb {
           animation-delay: 3.3s;
 }
 p.header-blurb span.emphasize {
-  font-family: serif;
+  font-family: "Playfair Display", serif;
   font-style: italic;
-  font-weight: 700;
+  font-weight: 900;
 }
 p.header-blurb span.dot-underline {
   border-bottom: 2px dotted white;
@@ -613,7 +612,6 @@ section.bio .bio-flex-container .bio-text {
   margin-top: 30px;
   font-size: 1.8rem;
   line-height: 3.4rem;
-  cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>👀</text></svg>"), auto;
 }
 section.bio .bio-flex-container .bio-text p {
   margin: 1.8rem 0;
@@ -621,6 +619,7 @@ section.bio .bio-flex-container .bio-text p {
 section.bio .bio-flex-container .bio-text span.bio-hover {
   font-style: italic;
   border-bottom: 2px dotted lightslategray;
+  cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>👀</text></svg>"), auto;
 }
 section.bio .bio-flex-container .dynamic-image-box {
   margin: 50px 0 0 20px;
@@ -887,7 +886,7 @@ section.projects ul.projects-container li .overlay {
   height: 100%;
   width: 100%;
   border-radius: 5px;
-  font-family: Helvetica;
+  font-family: Helvetica Neue, "Roboto", Arial, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -904,7 +903,7 @@ section.projects ul.projects-container li .overlay.show {
   z-index: unset;
 }
 section.projects ul.projects-container li .overlay h3 {
-  font-family: Helvetica;
+  font-family: Helvetica Neue, "Roboto", Arial, sans-serif;
   font-weight: 400;
   border-bottom: 2px solid black;
   padding: 5px 0;
@@ -1062,7 +1061,7 @@ section.contact .contact-flex-container .contact-content .soupcan-container {
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
-  cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>👀</text></svg>"), auto;
+  cursor: pointer;
   z-index: 10;
 }
 section.contact .contact-flex-container .contact-content .soupcan-container.flip-it {
@@ -1111,7 +1110,7 @@ section.contact form {
   color: #333333;
 }
 section.contact form input, section.contact form textarea {
-  font-family: Helvetica;
+  font-family: Helvetica Neue, "Roboto", Arial, sans-serif;
   border: none;
   margin-bottom: 10px;
   width: 100%;

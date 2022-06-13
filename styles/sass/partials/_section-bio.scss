@@ -33,7 +33,7 @@ section.bio {
             margin-top: 30px;
             font-size: 1.8rem;
             line-height: 3.4rem;
-            cursor: $eyes;
+            // cursor: $eyes;
 
             p {
                 margin: 1.8rem 0;
@@ -43,7 +43,7 @@ section.bio {
                 font-style:italic;
                 border-bottom: 2px dotted lightslategray;
                 // font-weight: 600;
-                // cursor: $eyes;
+                cursor: $eyes;
             }
         }
 
@@ -79,18 +79,6 @@ section.bio {
 
     }
 
-    // !REMOVE
-    // &::before {
-    //             content: 'HELLO';
-    //             font-family: Helvetica;
-    //             font-weight: 900;
-    //             font-size: 35rem;
-    //             color: #f7eadc;
-    //             display: block;
-    //             position: absolute;
-    //             // animation: marquee 20s linear infinite;
-    //             left: 100%;
-    //         }
 
     .marquee {
         font-size: 200px;

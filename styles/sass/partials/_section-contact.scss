@@ -90,7 +90,7 @@ section.contact {
 
                 width: 75%;
                 transition: transform 1s;
-                cursor: $eyes;
+                cursor: pointer;
                 z-index: 10;
                 
                 &.flip-it {
@@ -141,7 +141,7 @@ section.contact {
 
         input, textarea {
 
-            font-family: Helvetica;
+            font-family: $helvetica;
             border: none;
             margin-bottom: 10px;
             width: 100%;

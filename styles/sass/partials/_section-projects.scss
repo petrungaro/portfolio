@@ -52,7 +52,7 @@ section.projects {
                 width: 100%;
                 border-radius: 5px;
 
-                font-family: Helvetica;
+                font-family: $helvetica;
 
                 display: flex;
                 flex-direction: column;
@@ -64,7 +64,7 @@ section.projects {
                 }
 
                 h3 {
-                    font-family: Helvetica;
+                    font-family: $helvetica;
                     font-weight: 400;
                     border-bottom: 2px solid black;
                     padding: 5px 0;

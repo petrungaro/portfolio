@@ -146,7 +146,7 @@ soupcan.responses = {
     res3: `☀️ How about that weather? ⛈`,
     res4: 'Wanna be friends? 👯‍♂️',
     res5: `I've got a great joke for you...👉<insert great joke please>👈`,
-    res6: `Seriously how did I get here? Why can't I leave?? 😱`
+    res6: `Soupcan graphic courtesy of ✨@magoobtoys✨, check him out on instagram!`
 }
 
 soupcan.setVariables = () => {

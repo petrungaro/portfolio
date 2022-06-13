@@ -98,9 +98,9 @@ p.header-blurb {
 
     span {
         &.emphasize {
-            font-family: serif;
+            font-family: $secondary-font;
             font-style: italic;
-            font-weight: 700;
+            font-weight: 900;
         }
 
         &.dot-underline {
