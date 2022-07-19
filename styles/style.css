@@ -1151,6 +1151,7 @@ section.contact form button:hover, section.contact form button:focus {
 footer {
   background: #333333;
   text-align: center;
+  padding: 5px 0;
 }
 footer p {
   color: white;
