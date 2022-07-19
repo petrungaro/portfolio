@@ -105,6 +105,10 @@
 // Tablet vertical
 @media (max-width: 800px) {
 
+    label.nav-toggle {
+        padding: 10px 5px;
+    }
+
     section.bio {
 
         .marquee {
@@ -141,7 +145,7 @@
 
             p, 
             .soupcan-container, 
-            .responses {
+            .responses, .show-responses {
                 display: none;
             }
 

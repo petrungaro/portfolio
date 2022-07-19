@@ -29,11 +29,11 @@
 label.nav-toggle {
     background: none;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 40px 10px 20px;
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 20;
+    z-index: 35;
     cursor: pointer;
     color: $black;
     // border: 1px solid red;
@@ -45,7 +45,7 @@ label.nav-toggle {
 
     &:hover, &:focus   {
         // transform: translateX(-38px);
-        color: red;
+        color: $accent;
     }
 }
 
@@ -88,7 +88,7 @@ nav {
 
     transform: translateY(-50px);
     transition: transform .5s;
-    z-index: 10;
+    z-index: 30;
 
 
     ul.nav-links {
