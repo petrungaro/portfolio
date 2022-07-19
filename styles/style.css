@@ -1660,6 +1660,7 @@ footer p {
 section.contact .contact-flex-container .contact-content .soupcan-container,
 section.contact .contact-flex-container .contact-content .responses, section.contact .contact-flex-container .contact-content .show-responses {
     display: none;
+    z-index: -1;
   }
   section.contact .contact-flex-container .contact-content .social-links {
     border: none;
