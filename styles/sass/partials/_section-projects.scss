@@ -1,5 +1,5 @@
 section.projects {
-    background-color: #d1ae9b;
+    // background-color: #d1ae9b;
     // min-height: 100vh;
     padding: 60px 0;
 
@@ -41,6 +41,8 @@ section.projects {
             .overlay {
                 opacity: 0;
                 transition: opacity .4s ease-in-out;
+                // overflow-y: scroll;
+                // scrollbar-color: grey rgba(230, 230, 230, 0.95);
 
                 position: absolute;
                 background: rgba(230, 230, 230, 0.95);

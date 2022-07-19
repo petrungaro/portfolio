@@ -14,8 +14,8 @@ section.stack {
         justify-content: center;
     }
 
-    background-color: #003300;
-    color: #a97b63;
+    // background-color: #003300;
+    // color: #a97b63;
 
     // .flex {
     //     display: flex;
@@ -33,6 +33,7 @@ section.stack {
         text-align: left;
         width: 60%;
         height: 100%;
+        z-index: 10;
 
         h2 {
             width: 100%;
@@ -44,7 +45,21 @@ section.stack {
             font-size: 3rem;
             line-height: 5rem;
             text-align: center;
+        }
+        
+        .ellipse {
+            opacity: 0;
+            animation: blink 1s infinite forwards;
 
+            &.one {
+                animation-delay: .2s;
+            }
+            &.two {
+                animation-delay: .4s;
+            }
+            &.three {
+                animation-delay: .6s;
+            }
         }
     }
     
@@ -56,7 +71,8 @@ section.stack {
         border: 1px solid;
         padding: 20px;
         border-radius: 50%;
-        mix-blend-mode: exclusion;
+        color: $coffee;
+        // mix-blend-mode: exclusion;
     }
 
     .icon3, .icon5, .icon7 {
@@ -81,12 +97,12 @@ section.stack {
     
 
     h2 {
-        color: inherit;
-        border-bottom: 2px solid #a97b63;
+
+        border-bottom: 2px solid #3D3D3D;
     }
 
     p {
-        color: #a97b63;
+        // color: #a97b63;
     }
     
     ul {

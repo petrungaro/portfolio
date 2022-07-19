@@ -200,3 +200,8 @@
     95% { transform: rotate(-5deg); }
     100% { transform: rotate(0deg); }
 }
+
+@keyframes blink {
+    from { opacity: 0}
+    to {opacity: 1}
+}

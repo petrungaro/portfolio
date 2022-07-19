@@ -15,7 +15,6 @@
     <input type="checkbox" id="menu-toggle" class="hide-check">
     <label for="menu-toggle" class="nav-toggle" tabindex="0">
         <i class="fa-solid fa-chevron-left"></i>
-        <!-- <span class="menu-label"></span> -->
         <i class="fa-solid fa-chevron-right"></i>
     </label>
     
@@ -28,12 +27,7 @@
             <li><a href="#contact" class="underline">Contact</a></li>
         </ul>
     </nav>
-    <header>
-        <!-- ! Work on mobile marquee header later -->
-        <!-- <div class="marquee-header">
-            <span class="stationary">ROB</span>
-            <span class="moving">PETRUNGARO</span>
-        </div> -->
+    <header id="top">
         <div class="left">
             <h1 class="block-reveal-first">
                 <span class="xl">Rob Petrungaro</span>
@@ -74,10 +68,9 @@
         </section>
         <section class="stack" id="tools" tabindex="0">
             <div class="wrapper flex">
-                <!-- <h2>Tools & Skills</h2> -->
                 <div class="text-box" tabindex="0">
                     <h2>Skills & Tools</h2>
-                    <p>HTML, CSS, JavaScript, React, Rest APIs, git, jQuery, github, Firebase, responsive design and learning more </p>
+                    <p>HTML, CSS, JavaScript, React, Rest APIs, git, jQuery, github, Firebase, responsive design and learning more <span class="ellipse one">.</span><span class="ellipse two">.</span><span class="ellipse three">.</span> </p>
                 </div>
                 
                 <i class="devicon-html5-plain-wordmark icon icon1"></i>
@@ -99,20 +92,44 @@
                 
                 <ul class="projects-container">
                     <li tabindex="0">
-                        <img src="./assets/mockup-sophie.jpg" alt="Several screenshot mockups of a website">
+                        <img src="./assets/mockup-coinwatch.jpg" alt="An image of two tablets and two phones displaying a crypto price app">
                         <div class="overlay">
-                            <h3>All About Sophie</h3>
-                            <p class="description" tabindex="0">For this PSD conversion project, the goal was to take a designer-provided psd file and styleguide, and convert that to a fully responsive, accessible, multi-page website using HTML & CSS. Small Javascript functionality was later added.</p>
+                            <h3>CoinWatch</h3>
+                            <p class="description" tabindex="0">This React app provides the user with up-to-date crypto prices and historical data, as well as a selection of links to crypto-related news articles via public APIs. </p>
                             <div class="card-footer">
                                 <div class="site-links">
-                                    <a href="https://comfy-semifreddo-a5c5b9.netlify.app/" target="_blank" class="underline">Live Site</a>
-                                    <a href="https://github.com/petrungaro/rob-petrungaro-project-one" target="_blank" class="underline">Github</a>
+                                    <a href="https://coin-watch-app.netlify.app/" target="_blank" class="underline">Live Site</a>
+                                    <a href="https://github.com/petrungaro/rob-petrungaro-project-three" target="_blank" class="underline">Github</a>
                                 </div>
                                 <div class="tools-used">
                                     <p>
+                                        <i class="devicon-react-original icon icon5" title="React"></i>
                                         <i class="fa-brands fa-html5" title="HTML"></i>
                                         <i class="fa-brands fa-css3-alt" title="CSS"></i>
                                         <i class="fa-brands fa-js" title="Javascript"></i>
+                                        <i class="fa-solid fa-gears" title="API Integration"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li tabindex="0">
+                        <img src="./assets/mockup-sunrun.jpg" alt="An image of a tablet and phone displaying a running app based on the sun">
+                        <div class="overlay">
+                            <h3>Sun Run</h3>
+                            <p class="description" tabindex="0">This React app was built as a team, and involved planning and organizing multiple components and state into single-page app that provides a running time to the user. Involved use of geoloation and multiple APIs.</p>
+                            <div class="card-footer">
+                                <div class="site-links">
+                                    <a href="https://sun-run.netlify.app/" target="_blank" class="underline">Live Site</a>
+                                    <a href="https://github.com/JunoSunRun/project-4-sun-run" target="_blank" class="underline">Github</a>
+                                </div>
+                                <div class="tools-used">
+                                    <p>
+                                        <i class="devicon-react-original icon icon5" title="React"></i>
+                                        <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                                        <i class="fa-brands fa-js" title="Javascript"></i>
+                                        <i class="fa-solid fa-gears" title="API Integration"></i>
+                                        <i class="fa-solid fa-user-group" title="Group Programming"></i>
                                     </p>
                                 </div>
                             </div>
@@ -125,7 +142,7 @@
                             <p class="description" tabindex="0">The goal of this <a class="dotted" href="https://www.simonoconnor.ca/" target="_blank" title="Simon O'Connor">paired</a> project was to create a web app that included user interaction and the use of a RESTful API. We decided to create a trivia app where the user can select a category and difficulty, and is then served with a series of multiple choice questions.</p>
                             <div class="card-footer">
                                 <div class="site-links">
-                                    <a href="https://boisterous-cheesecake-b1d2d5.netlify.app/" target="_blank" class="underline">Live Site</a>
+                                    <a href="https://trivia-app-sr.netlify.app/" target="_blank" class="underline">Live Site</a>
                                     <a href="https://github.com/Simon-and-Robs-Project-2/TriviaNight" target="_blank" class="underline">Github</a>
                                 </div>
                                 <div class="tools-used">
@@ -142,42 +159,20 @@
                         </div>
                     </li>
                     <li tabindex="0">
-                        <img src="./assets/placeholder-mockup2.jpg" alt="">
+                        <img src="./assets/mockup-sophie.jpg" alt="Several screenshot mockups of a website">
                         <div class="overlay">
-                            <h3>Project Title</h3>
-                            <p class="description" tabindex="0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi facilis rerum quam beatae, dicta modi provident commodi odit odio assumenda. Assumenda fugit dolores ea, aliquid iure possimus nisi, magni ducimus vel, sequi ipsam voluptates fugiat vero sint suscipit. Eum ullam natus non illum, fugiat consequatur! Delectus cupiditate magnam odio consequuntur!</p>
+                            <h3>All About Sophie</h3>
+                            <p class="description" tabindex="0">For this PSD conversion project, the goal was to take a designer-provided psd file and styleguide, and convert that to a fully responsive, accessible, multi-page website using HTML & CSS. Small Javascript functionality was later added.</p>
                             <div class="card-footer">
                                 <div class="site-links">
-                                    <a href="" target="_blank" class="underline">Live Site</a>
-                                    <a href="" target="_blank" class="underline">Github</a>
+                                    <a href="https://comfy-semifreddo-a5c5b9.netlify.app/" target="_blank" class="underline">Live Site</a>
+                                    <a href="https://github.com/petrungaro/rob-petrungaro-project-one" target="_blank" class="underline">Github</a>
                                 </div>
                                 <div class="tools-used">
                                     <p>
                                         <i class="fa-brands fa-html5" title="HTML"></i>
                                         <i class="fa-brands fa-css3-alt" title="CSS"></i>
                                         <i class="fa-brands fa-js" title="Javascript"></i>
-                                        <i class="fa-solid fa-gears" title="API Integration"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li tabindex="0">
-                        <img src="./assets/placeholder-mockup3.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Project Title</h3>
-                            <p class="description" tabindex="0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi facilis rerum quam beatae, dicta modi provident commodi odit odio assumenda. Assumenda fugit dolores ea, aliquid iure possimus nisi, magni ducimus vel, sequi ipsam voluptates fugiat vero sint suscipit. Eum ullam natus non illum, fugiat consequatur! Delectus cupiditate magnam odio consequuntur!</p>
-                            <div class="card-footer">
-                                <div class="site-links">
-                                    <a href="" target="_blank" class="underline">Live Site</a>
-                                    <a href="" target="_blank" class="underline">Github</a>
-                                </div>
-                                <div class="tools-used">
-                                    <p>
-                                        <i class="fa-brands fa-html5" title="HTML"></i>
-                                        <i class="fa-brands fa-css3-alt" title="CSS"></i>
-                                        <i class="fa-brands fa-js" title="Javascript"></i>
-                                        <i class="fa-solid fa-gears" title="API Integration"></i>
                                     </p>
                                 </div>
                             </div>
@@ -211,7 +206,7 @@
                                 <a href="https://github.com/petrungaro" target="_blank"><i class="fa-brands fa-github" title="Github"></i></a>
                             </li>
                             <li>
-                                <a href="" target="_blank"><i class="fa-solid fa-calendar-days" title="Calendly"></i></a>
+                                <a href="https://calendly.com/rob-petrungaro" target="_blank"><i class="fa-solid fa-calendar-days" title="Calendly"></i></a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/petsomething/" target="_blank"><i class="fa-brands fa-instagram" title="Instagram"></i></a>
