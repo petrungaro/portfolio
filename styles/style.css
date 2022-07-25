@@ -565,7 +565,7 @@ p.header-blurb span.dot-underline {
 }
 p.header-blurb span.text-expand {
   white-space: nowrap;
-  display: inline-block;
+  display: block;
   -webkit-animation: text-expand 1.5s ease-in-out infinite alternate;
           animation: text-expand 1.5s ease-in-out infinite alternate;
   -webkit-animation-delay: 4s;

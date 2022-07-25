@@ -110,7 +110,7 @@ p.header-blurb {
         &.text-expand {
             // font-family: serif;
             white-space: nowrap;
-            display: inline-block;
+            display: block;
             animation: text-expand 1.5s ease-in-out infinite alternate;
             animation-delay: 4s;
 
